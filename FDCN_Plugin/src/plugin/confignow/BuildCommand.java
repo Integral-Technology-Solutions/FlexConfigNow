@@ -8,7 +8,7 @@ import flexagon.ff.common.core.logging.FlexLogger;
 import java.io.File;
 
 /**
- * Created by Matt on 3/08/2017.
+ * Created by Matt Spencer on 3/08/2017.
  */
 public class BuildCommand
 {
@@ -26,16 +26,8 @@ public class BuildCommand
         this.mBuildCommand = commands;
     }
 
-    public void setConfigNowHome(String configNowHome){
-        this.mConfigNowHome = configNowHome;
-    }
-
     public String getBuildCommand(){
         return this.mBuildCommand;
-    }
-
-    public String getConfigNowHome(){
-        return this.mConfigNowHome;
     }
 
     public void runBuildCommand(){
@@ -59,7 +51,7 @@ public class BuildCommand
         }
     }
 
-    public boolean validateBuildCommands(){
+    private boolean validateBuildCommands(){
         String method = "validateBuildCommads";
         String[] args = this.mBuildCommand.split("\\s");
         if (this.mBuildCommand == null){
