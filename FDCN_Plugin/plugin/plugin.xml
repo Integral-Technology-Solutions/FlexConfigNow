@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PluginDefinition xmlns="http://flexagon.com/deploy/plugin">
+  <Name>IntegralConfigNOWPlugin</Name>
+  <PluginDisplayName>ConfigNOW</PluginDisplayName>
+  <Description>A plugin to execute ConfigNOW commands</Description>
+  <TechnologyGroup>Server Management</TechnologyGroup>
+  <SubTechnologyGroup>ConfigNOW</SubTechnologyGroup>
+  <Vendor>Integral Technology Solutions</Vendor>
+  <MaxConcurrentThreads>-1</MaxConcurrentThreads>
+  <Version>0.7</Version>
+  <Operations>
+    <Operation>
+      <Name>createDomain</Name>
+      <Description>Creates a new web logic server domain on the endpoint</Description>
+      <Target>plugin.confignow.operations.create_domain</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>true</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_ORACLE_HOME</Name>
+          <DataType>String</DataType>
+          <Description>Path to the Oracle home on the endpoint</Description>
+          <DisplayName>Oracle Home</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+        <Input>
+          <Name>FDCN_WLS_NAME</Name>
+          <DataType>String</DataType>
+          <Description>The name of the web logic server folder</Description>
+          <DisplayName>WLS Name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+        <Input>
+          <Name>FDCN_JDK_HOME</Name>
+          <DataType>String</DataType>
+          <Description>The location of the WLS JDK if different to endpoint JDK location</Description>
+          <DisplayName>WLS JDK Home</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>false</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+        <Input>
+          <Name>FDCN_WLS_DOMAIN_DIR</Name>
+          <DataType>String</DataType>
+          <Description>The Path to the WLS domain on the endpoint</Description>
+          <DisplayName>WLS Domain Path</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+        <Input>
+          <Name>FDCN_DOMAIN_NAME</Name>
+          <DataType>String</DataType>
+          <Description>The name of the WLS domain to be created</Description>
+          <DisplayName>WLS Domain Name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>false</ConsumesArtifacts>
+      <ProducesArtifacts>true</ProducesArtifacts>
+    </Operation>
+  </Operations>
+</PluginDefinition>
