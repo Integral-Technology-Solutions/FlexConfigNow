@@ -10,17 +10,17 @@
   <Version>0.7</Version>
   <Operations>
     <Operation>
-      <Name>createDomain</Name>
-      <Description>Creates a new web logic server domain on the endpoint</Description>
-      <Target>plugin.confignow.operations.create_domain</Target>
+      <Name>ConfigNowCommand</Name>
+      <Description>Runs ConfigNOW commands</Description>
+      <Target>plugin.confignow.operations.ConfigNowCommand</Target>
       <PropertyKeys/>
       <Inputs>
         <AllowsUserDefined>true</AllowsUserDefined>
         <Input>
-          <Name>FDCN_ORACLE_HOME</Name>
+          <Name>FDCN_COMMAND</Name>
           <DataType>String</DataType>
-          <Description>Path to the Oracle home on the endpoint</Description>
-          <DisplayName>Oracle Home</DisplayName>
+          <Description>ConfigNOW command to run</Description>
+          <DisplayName>Command</DisplayName>
           <IsDefaultValueExpression>false</IsDefaultValueExpression>
           <IsRequired>true</IsRequired>
           <IsEncrypted>false</IsEncrypted>
@@ -28,10 +28,10 @@
           <DisplayColumns>120</DisplayColumns>
         </Input>
         <Input>
-          <Name>FDCN_WLS_NAME</Name>
+          <Name>FDCN_ENVIRONMENT</Name>
           <DataType>String</DataType>
-          <Description>The name of the web logic server folder</Description>
-          <DisplayName>WLS Name</DisplayName>
+          <Description>The environment which is being used</Description>
+          <DisplayName>Environment</DisplayName>
           <IsDefaultValueExpression>false</IsDefaultValueExpression>
           <IsRequired>true</IsRequired>
           <IsEncrypted>false</IsEncrypted>
@@ -39,10 +39,10 @@
           <DisplayColumns>120</DisplayColumns>
         </Input>
         <Input>
-          <Name>FDCN_JDK_HOME</Name>
+          <Name>FDCN_CONFIG_FILE</Name>
           <DataType>String</DataType>
-          <Description>The location of the WLS JDK if different to endpoint JDK location</Description>
-          <DisplayName>WLS JDK Home</DisplayName>
+          <Description>The properties file to be used for performing the operation</Description>
+          <DisplayName>Properties File</DisplayName>
           <IsDefaultValueExpression>false</IsDefaultValueExpression>
           <IsRequired>false</IsRequired>
           <IsEncrypted>false</IsEncrypted>
@@ -50,25 +50,14 @@
           <DisplayColumns>120</DisplayColumns>
         </Input>
         <Input>
-          <Name>FDCN_WLS_DOMAIN_DIR</Name>
+          <Name>FDCN_CONFIGURATION</Name>
           <DataType>String</DataType>
-          <Description>The Path to the WLS domain on the endpoint</Description>
+          <Description>If a custom properties file is required, add the file here</Description>
           <DisplayName>WLS Domain Path</DisplayName>
           <IsDefaultValueExpression>false</IsDefaultValueExpression>
-          <IsRequired>true</IsRequired>
+          <IsRequired>false</IsRequired>
           <IsEncrypted>false</IsEncrypted>
-          <DisplayRows>1</DisplayRows>
-          <DisplayColumns>120</DisplayColumns>
-        </Input>
-        <Input>
-          <Name>FDCN_DOMAIN_NAME</Name>
-          <DataType>String</DataType>
-          <Description>The name of the WLS domain to be created</Description>
-          <DisplayName>WLS Domain Name</DisplayName>
-          <IsDefaultValueExpression>false</IsDefaultValueExpression>
-          <IsRequired>true</IsRequired>
-          <IsEncrypted>false</IsEncrypted>
-          <DisplayRows>1</DisplayRows>
+          <DisplayRows>8</DisplayRows>
           <DisplayColumns>120</DisplayColumns>
         </Input>
       </Inputs>

@@ -63,7 +63,7 @@ public class BuildCommand
         }else if (args.length != 4){
             LOG.logSevere(method, "Incorrect amount of build arguments parsed");
             return false;
-        }else if (args[0] != "confignow"){
+        }else if (!args[0].trim().equals("confignow")){
             LOG.logSevere(method, "First build argument needs to be 'confignow'");
             return false;
         }else{

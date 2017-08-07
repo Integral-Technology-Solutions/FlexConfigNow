@@ -144,7 +144,7 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         }
 
         /* Validation of environment provided */
-        File environmentDir = new File(configNowHome + File.separator + "config" + File.separator + environment);
+        File environmentDir = new File(configNowHome + File.separator + "config" + File.separator + "environments" + File.separator + environment);
         if(environment == null){
             throw new FlexMissingArgumentException("No environment directory provided");
         }else if (!environmentDir.exists()){
@@ -169,7 +169,7 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         if(configFileLoc == null){
             LOG.logWarning(method, "No properties file name provided! Ensure that custom configuration is entered.");
         }else {
-            File configFile = new File(configNowHome + File.separator + "config" + File.separator + environment + File.separator + configFileLoc);
+            File configFile = new File(configNowHome + File.separator + "config" + File.separator + "environments" + File.separator + environment + File.separator + configFileLoc + ".properties");
             if(!configFile.exists()){
                 throw new FlexInvalidArgumentException("properties file name does not exist");
             }else{

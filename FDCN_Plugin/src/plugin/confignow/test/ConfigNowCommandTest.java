@@ -5,16 +5,30 @@ import flexagon.fd.core.plugin.AbstractPluginProvider;
 import flexagon.fd.core.workflow.MockWorkflowExecutionContext;
 import flexagon.fd.core.workflow.WorkflowExecutionContext;
 import flexagon.ff.common.core.exceptions.FlexCheckedException;
+import org.junit.BeforeClass;
 import org.junit.jupiter.api.Test;
 import plugin.confignow.configNowProperties;
 import plugin.confignow.operations.ConfigNowCommand;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by Matt Spencer on 4/08/2017.
  */
 public class ConfigNowCommandTest {
+    static String fileName1 = "TestFile1.txt";
+    static String subFolder = "subFolder";
+
+    @BeforeClass
+    public static void prepTests()
+        throws IOException{
+        WorkflowExecutionContext context = new MockWorkflowExecutionContext();
+        File file = new File(context.getTempDirectory() + File.separator + subFolder + File.separator + fileName1);
+        file.getParentFile().mkdir();
+        file.createNewFile();
+    }
 
     @Test
     public void activate_composite_properInputTest()
