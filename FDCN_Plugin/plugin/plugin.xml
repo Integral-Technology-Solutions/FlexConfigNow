@@ -13,53 +13,12 @@
       <Name>ConfigNowCommand</Name>
       <Description>Runs ConfigNOW commands</Description>
       <Target>plugin.confignow.operations.ConfigNowCommand</Target>
-      <PropertyKeys/>
+      <PropertyKeys>
+        <Property>FDCN_COMMAND</Property>
+        <Property>FDCN_CONFIG_FILE</Property>
+      </PropertyKeys>
       <Inputs>
-        <AllowsUserDefined>true</AllowsUserDefined>
-        <Input>
-          <Name>FDCN_COMMAND</Name>
-          <DataType>String</DataType>
-          <Description>ConfigNOW command to run</Description>
-          <DisplayName>Command</DisplayName>
-          <IsDefaultValueExpression>false</IsDefaultValueExpression>
-          <IsRequired>true</IsRequired>
-          <IsEncrypted>false</IsEncrypted>
-          <DisplayRows>1</DisplayRows>
-          <DisplayColumns>120</DisplayColumns>
-        </Input>
-        <Input>
-          <Name>FDCN_ENVIRONMENT</Name>
-          <DataType>String</DataType>
-          <Description>The environment which is being used</Description>
-          <DisplayName>Environment</DisplayName>
-          <IsDefaultValueExpression>false</IsDefaultValueExpression>
-          <IsRequired>true</IsRequired>
-          <IsEncrypted>false</IsEncrypted>
-          <DisplayRows>1</DisplayRows>
-          <DisplayColumns>120</DisplayColumns>
-        </Input>
-        <Input>
-          <Name>FDCN_CONFIG_FILE</Name>
-          <DataType>String</DataType>
-          <Description>The properties file to be used for performing the operation</Description>
-          <DisplayName>Properties File</DisplayName>
-          <IsDefaultValueExpression>false</IsDefaultValueExpression>
-          <IsRequired>false</IsRequired>
-          <IsEncrypted>false</IsEncrypted>
-          <DisplayRows>1</DisplayRows>
-          <DisplayColumns>120</DisplayColumns>
-        </Input>
-        <Input>
-          <Name>FDCN_CONFIGURATION</Name>
-          <DataType>String</DataType>
-          <Description>If a custom properties file is required, add the file here</Description>
-          <DisplayName>WLS Domain Path</DisplayName>
-          <IsDefaultValueExpression>false</IsDefaultValueExpression>
-          <IsRequired>false</IsRequired>
-          <IsEncrypted>false</IsEncrypted>
-          <DisplayRows>8</DisplayRows>
-          <DisplayColumns>120</DisplayColumns>
-        </Input>
+        <AllowsUserDefined>false</AllowsUserDefined>
       </Inputs>
       <Outputs>
         <AllowsUserDefined>false</AllowsUserDefined>

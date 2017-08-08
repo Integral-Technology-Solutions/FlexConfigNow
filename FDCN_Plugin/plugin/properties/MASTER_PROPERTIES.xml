@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList xmlns="http://flexagon.com/deploy/propertylist">
+    <Name>FDCN_PLUGIN</Name>
+    <Property>
+        <Name>FDCN_COMMAND</Name>
+        <Description>The ConfigNOW command to be ran</Description>
+        <Scope>PROJECT</Scope>
+        <DataType>String</DataType>
+        <SubDataType>DIRECTORY</SubDataType>
+        <IsEncrypted>false</IsEncrypted>
+        <IsRequired>true</IsRequired>
+        <Validators/>
+    </Property>
+    <Property>
+        <Name>FDCN_CONFIG_FILE</Name>
+        <Description>The name of the properties file to run the command with</Description>
+        <Scope>PROJECT</Scope>
+        <DataType>String</DataType>
+        <IsEncrypted>false</IsEncrypted>
+        <IsRequired>true</IsRequired>
+        <Validators/>
+    </Property>
+</PropertyList>

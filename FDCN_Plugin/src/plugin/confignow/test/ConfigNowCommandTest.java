@@ -1,12 +1,15 @@
 package plugin.confignow.test;
 
+import flexagon.fd.core.Environment;
 import flexagon.fd.core.PropertyValue;
 import flexagon.fd.core.plugin.AbstractPluginProvider;
 import flexagon.fd.core.workflow.MockWorkflowExecutionContext;
 import flexagon.fd.core.workflow.WorkflowExecutionContext;
 import flexagon.ff.common.core.exceptions.FlexCheckedException;
+import flexagon.ff.common.core.exceptions.FlexInvalidArgumentException;
+import flexagon.ff.common.core.exceptions.FlexMissingArgumentException;
 import org.junit.BeforeClass;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import plugin.confignow.configNowProperties;
 import plugin.confignow.operations.ConfigNowCommand;
 
@@ -31,16 +34,105 @@ public class ConfigNowCommandTest {
     }
 
     @Test
-    public void activate_composite_properInputTest()
+    public void correctInputsTest()
         throws FlexCheckedException{
         AbstractPluginProvider plugin = new ConfigNowCommand();
 
         ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
         inputs.put(configNowProperties.FDCN_COMMAND, new PropertyValue("activate_composite", PropertyValue.PropertyTypeEnum.String, false));
-        inputs.put(configNowProperties.FDCN_ENVIRONMENT, new PropertyValue("local", PropertyValue.PropertyTypeEnum.String, false));
         inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("composites_example",PropertyValue.PropertyTypeEnum.String, false));
 
         WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
+        //This line is for testing purposes to create a local environment, may need changing
+        context.setEnvironment(new Environment(context.getEnvironment().getEnvironmentID(),"local","local"));
+        plugin.setWorkflowExecutionContext(context);
+
+        plugin.validate();
+        plugin.execute();
+    }
+
+    @Test(expected = FlexInvalidArgumentException.class)
+    public void incorrectCommandTest()
+        throws FlexInvalidArgumentException, FlexCheckedException {
+        AbstractPluginProvider plugin = new ConfigNowCommand();
+
+        ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
+        inputs.put(configNowProperties.FDCN_COMMAND, new PropertyValue("actvate_cmposite", PropertyValue.PropertyTypeEnum.String, false));
+        inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("composites_example",PropertyValue.PropertyTypeEnum.String, false));
+
+        WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
+        //This line is for testing purposes to create a local environment, may need changing
+        context.setEnvironment(new Environment(context.getEnvironment().getEnvironmentID(),"local","local"));
+        plugin.setWorkflowExecutionContext(context);
+
+        plugin.validate();
+        plugin.execute();
+    }
+
+    @Test(expected = FlexInvalidArgumentException.class)
+    public void incorrectConfigFileTest()
+        throws FlexInvalidArgumentException, FlexCheckedException{
+        AbstractPluginProvider plugin = new ConfigNowCommand();
+
+        ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
+        inputs.put(configNowProperties.FDCN_COMMAND, new PropertyValue("activate_composite", PropertyValue.PropertyTypeEnum.String, false));
+        inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("composites_ex",PropertyValue.PropertyTypeEnum.String, false));
+
+        WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
+        //This line is for testing purposes to create a local environment, may need changing
+        context.setEnvironment(new Environment(context.getEnvironment().getEnvironmentID(),"local","local"));
+        plugin.setWorkflowExecutionContext(context);
+
+        plugin.validate();
+        plugin.execute();
+    }
+
+    @Test(expected = FlexInvalidArgumentException.class)
+    public void incorrectEnvNameTest()
+        throws FlexCheckedException{
+        AbstractPluginProvider plugin = new ConfigNowCommand();
+
+        ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
+        inputs.put(configNowProperties.FDCN_COMMAND, new PropertyValue("activate_composite", PropertyValue.PropertyTypeEnum.String, false));
+        inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("composites_example",PropertyValue.PropertyTypeEnum.String, false));
+
+        WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
+        //This line is for testing purposes to create a local environment, may need changing
+        //context.setEnvironment(new Environment(context.getEnvironment().getEnvironmentID(),"local","local"));
+        plugin.setWorkflowExecutionContext(context);
+
+        plugin.validate();
+        plugin.execute();
+    }
+
+    @Test(expected = FlexMissingArgumentException.class)
+    public void missingCommandTest()
+        throws FlexCheckedException, FlexMissingArgumentException{
+        AbstractPluginProvider plugin = new ConfigNowCommand();
+
+        ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
+        inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("composites_example",PropertyValue.PropertyTypeEnum.String, false));
+
+        WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
+        //This line is for testing purposes to create a local environment, may need changing
+        context.setEnvironment(new Environment(context.getEnvironment().getEnvironmentID(),"local","local"));
+        plugin.setWorkflowExecutionContext(context);
+
+        plugin.validate();
+        plugin.execute();
+    }
+
+    @Test(expected = FlexInvalidArgumentException.class)
+    public void missingConfigFileTest()
+        throws FlexCheckedException, FlexInvalidArgumentException{
+        AbstractPluginProvider plugin = new ConfigNowCommand();
+
+        ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
+        inputs.put(configNowProperties.FDCN_COMMAND, new PropertyValue("activate_composite", PropertyValue.PropertyTypeEnum.String, false));
+
+        WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
+        //This line is for testing purposes to create a local environment, may need changing
+        context.setEnvironment(new Environment(context.getEnvironment().getEnvironmentID(),"local","local"));
         plugin.setWorkflowExecutionContext(context);
 
         plugin.validate();

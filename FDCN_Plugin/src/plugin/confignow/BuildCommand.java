@@ -6,6 +6,7 @@ import flexagon.ff.common.core.externalprocess.ExternalProcess;
 import flexagon.ff.common.core.logging.FlexLogger;
 
 import java.io.File;
+import java.util.Arrays;
 
 /**
  * Created by Matt Spencer on 3/08/2017.
@@ -15,60 +16,66 @@ public class BuildCommand
     private static final String CLZ_NAM = BuildCommand.class.getName();
     private static final FlexLogger LOG = FlexLogger.getLogger(CLZ_NAM);
 
-    private String mBuildCommand;
+    private String[] mBuildCommand;
     private String mConfigNowHome;
 
     public BuildCommand(WorkflowExecutionContext workflowExecutionContext) {
         mConfigNowHome = workflowExecutionContext.getInstallPluginsDirectory() + File.separator + "configNOW";
     }
 
-    public void setBuildCommand(String commands){
+    public void setBuildCommand(String[] commands){
         this.mBuildCommand = commands;
     }
 
-    public String getBuildCommand(){
+    public String[] getBuildCommand(){
         return this.mBuildCommand;
     }
 
     public void runBuildCommand(){
-        // This is the method which will run command line arguments in the form:
-        // confignow <operation_name> <environment> <properties file>
-        // Calls ExternalProcess to run buildcommands
-
         String method = "runBuildCommand";
-        String configNowHome = this.mConfigNowHome;
-        // First, check that there is actually build commands to run
         if(!validateBuildCommands()){
             LOG.logSevere(method, "Build command validation failed!");
             LOG.logInfoExiting(method);
             throw new FlexInvalidArgumentException("Build Commands");
-        }else {
-            LOG.logInfo(method, "Creating mew external process with working directory of: " + configNowHome + " and command arguments of: " + getBuildCommand());
-            ExternalProcess externalProcess = new ExternalProcess(new File(configNowHome), getBuildCommand());
-            LOG.logInfo(method, "Executing external process");
-            externalProcess.execute();
-            LOG.logInfoExiting(method, "Execution complete");
         }
+        LOG.logInfo(method, "Creating new external process with working directory of: " + mConfigNowHome + " and command arguments of: " + getBuildCommand());
+        ExternalProcess externalProcess = new ExternalProcess(new File(mConfigNowHome));
+        configureExecution();
+        externalProcess.setCommands(Arrays.asList(getBuildCommand()));
+        LOG.logInfo(method, "Executing external process");
+        externalProcess.execute();
+        LOG.logInfoExiting(method, "Execution complete");
     }
 
     private boolean validateBuildCommands(){
         String method = "validateBuildCommads";
-        String[] args = this.mBuildCommand.split("\\s");
         if (this.mBuildCommand == null){
             LOG.logSevere(method, "No build commands parsed");
             return false;
-        }else if(this.mBuildCommand == "" || this.mBuildCommand == " "){
-            LOG.logSevere(method, "No build commands parsed");
-            return false;
-        }else if (args.length != 4){
+        }else if (mBuildCommand.length != 4){
             LOG.logSevere(method, "Incorrect amount of build arguments parsed");
             return false;
-        }else if (!args[0].trim().equals("confignow")){
+        }else if (!mBuildCommand[0].trim().equals("ConfigNOW")){
             LOG.logSevere(method, "First build argument needs to be 'confignow'");
             return false;
         }else{
             LOG.logInfo(method, "Build Commands verified");
             return true;
         }
+    }
+
+    /* This helper function edits the first build command argument
+    *  It is responsible for determining the OS type and applying
+    *  the correct extension to ConfigNOW (.sh or .cmd) and also
+    *  applying the correct path to the file */
+    private void configureExecution(){
+        String OS = System.getProperty("os.name").toLowerCase();
+        String fileExt;
+        if(OS.indexOf("win") >= 0){
+            fileExt = ".cmd";
+        }else{
+            fileExt = ".sh";
+        }
+        this.mBuildCommand[0] = mConfigNowHome + File.separator + mBuildCommand[0] + fileExt;
     }
 }

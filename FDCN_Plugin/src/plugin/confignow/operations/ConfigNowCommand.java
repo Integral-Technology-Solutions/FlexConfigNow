@@ -17,7 +17,7 @@ import java.util.ArrayList;
  */
 public class ConfigNowCommand extends AbstractPluginProvider{
 
-    private static final String CLZ_NAM = create_domain.class.getName();
+    private static final String CLZ_NAM = ConfigNowCommand.class.getName();
     private static final FlexLogger LOG = FlexLogger.getLogger(CLZ_NAM);
 
     private ArrayList<String> configNowCommands = new ArrayList<>();
@@ -109,10 +109,10 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         BuildCommand builder = new BuildCommand(getWorkflowExecutionContext());
 
         String command = getStringInput(configNowProperties.FDCN_COMMAND);
-        String environment = getStringInput(configNowProperties.FDCN_ENVIRONMENT);
+        String environment = getWorkflowExecutionContext().getEnvironment().getCode();
         String configFile = getStringInput(configNowProperties.FDCN_CONFIG_FILE);
 
-        String commandLine = "confignow " + command + " " + environment + " " + configFile;
+        String[] commandLine = {"ConfigNOW", command, environment, configFile};
 
         builder.setBuildCommand(commandLine);
         builder.runBuildCommand();
@@ -130,9 +130,8 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         String configNowHome = workflowExecutionContext.getInstallPluginsDirectory() + File.separator + "configNOW";
 
         String command = getStringInput(configNowProperties.FDCN_COMMAND);
-        String environment = getStringInput(configNowProperties.FDCN_ENVIRONMENT);
+        String environment = getWorkflowExecutionContext().getEnvironment().getCode();
         String configFileLoc = getStringInput(configNowProperties.FDCN_CONFIG_FILE);
-        String configuration = getStringInput(configNowProperties.FDCN_CONFIGURATION);
 
         /* Validation of ConfigNOW command provided */
         if(command == null){
@@ -153,28 +152,11 @@ public class ConfigNowCommand extends AbstractPluginProvider{
             LOG.logInfo(method, "Environment directory validated");
         }
 
-        /* Checks that at least one option of configuration has been specified */
-        if(configFileLoc == null && configuration == null){
-            LOG.logSevere(method, "NO PROPERTIES FILE OR CONFIGURATION SCRIPT PROVIDED! Please specify a properties file to use or write a custom configuration script.");
-            throw new FlexMissingArgumentException("No configuration options specified.");
-        }
-
-        /* Checks if both configuration options have been specified, if they have, remove custom option and use properties file */
-        if (configFileLoc != null && configuration != null){
-            LOG.logWarning(method, "Two configuration options have been provided. Custom option will be removed and the specified properties file will be used for configuration");
-            configuration = null;
-        }
-
-        /* Validation of config file */
-        if(configFileLoc == null){
-            LOG.logWarning(method, "No properties file name provided! Ensure that custom configuration is entered.");
-        }else {
-            File configFile = new File(configNowHome + File.separator + "config" + File.separator + "environments" + File.separator + environment + File.separator + configFileLoc + ".properties");
-            if(!configFile.exists()){
-                throw new FlexInvalidArgumentException("properties file name does not exist");
-            }else{
-                LOG.logInfo(method, "Properties file validated");
-            }
+        File configFile = new File(configNowHome + File.separator + "config" + File.separator + "environments" + File.separator + environment + File.separator + configFileLoc + ".properties");
+        if(!configFile.exists()){
+            throw new FlexInvalidArgumentException("properties file name does not exist");
+        }else{
+            LOG.logInfo(method, "Properties file validated");
         }
 
         LOG.logInfoExiting(method);
