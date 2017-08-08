@@ -19,6 +19,9 @@ public class ConfigNowCommand extends AbstractPluginProvider{
 
     private static final String CLZ_NAM = ConfigNowCommand.class.getName();
     private static final FlexLogger LOG = FlexLogger.getLogger(CLZ_NAM);
+    private String mCommand;
+    private String mEnvironment;
+    private String mConfigFile;
 
     private ArrayList<String> configNowCommands = new ArrayList<>();
 
@@ -108,11 +111,7 @@ public class ConfigNowCommand extends AbstractPluginProvider{
 
         BuildCommand builder = new BuildCommand(getWorkflowExecutionContext());
 
-        String command = getStringInput(configNowProperties.FDCN_COMMAND);
-        String environment = getWorkflowExecutionContext().getEnvironment().getCode();
-        String configFile = getStringInput(configNowProperties.FDCN_CONFIG_FILE);
-
-        String[] commandLine = {"ConfigNOW", command, environment, configFile};
+        String[] commandLine = {"ConfigNOW", mCommand, mEnvironment, mConfigFile};
 
         builder.setBuildCommand(commandLine);
         builder.runBuildCommand();
@@ -139,6 +138,7 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         }else if(!configNowCommands.contains(command)){
             throw new FlexInvalidArgumentException("Invalid ConfigNOW command provided");
         }else{
+            this.mCommand = command;
             LOG.logInfo(method, "ConfigNOW command validated");
         }
 
@@ -149,6 +149,7 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         }else if (!environmentDir.exists()){
             throw new FlexInvalidArgumentException("Environment directory doesn't exist");
         }else{
+            this.mEnvironment = environment;
             LOG.logInfo(method, "Environment directory validated");
         }
 
@@ -156,6 +157,7 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         if(!configFile.exists()){
             throw new FlexInvalidArgumentException("properties file name does not exist");
         }else{
+            this.mConfigFile = configFileLoc;
             LOG.logInfo(method, "Properties file validated");
         }
 

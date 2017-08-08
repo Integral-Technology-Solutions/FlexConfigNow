@@ -33,6 +33,7 @@ public class BuildCommand
 
     public void runBuildCommand(){
         String method = "runBuildCommand";
+        LOG.logInfoEntering(method);
         if(!validateBuildCommands()){
             LOG.logSevere(method, "Build command validation failed!");
             LOG.logInfoExiting(method);
@@ -55,7 +56,7 @@ public class BuildCommand
         }else if (mBuildCommand.length != 4){
             LOG.logSevere(method, "Incorrect amount of build arguments parsed");
             return false;
-        }else if (!mBuildCommand[0].trim().equals("ConfigNOW")){
+        }else if (!mBuildCommand[0].equals("ConfigNOW")){
             LOG.logSevere(method, "First build argument needs to be 'confignow'");
             return false;
         }else{
