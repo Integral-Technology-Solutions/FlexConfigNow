@@ -1,0 +1,4 @@
+The following arguments need adding to the JVM runtime arguments to
+allow for local unit testing of the plugin:
+-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install
+-Dflexagon.fd.repository.root=<C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts>
