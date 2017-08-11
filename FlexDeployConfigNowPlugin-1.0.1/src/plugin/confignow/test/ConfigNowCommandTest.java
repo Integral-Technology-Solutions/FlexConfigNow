@@ -147,4 +147,24 @@ public class ConfigNowCommandTest {
         plugin.validate();
         plugin.execute();
     }
+
+    @Test
+    public void correctInputsWithCustom()
+        throws FlexCheckedException{
+        AbstractPluginProvider plugin = new ConfigNowCommand();
+
+        String propertyReplacements = "soa.home=172.17.18.10";
+
+        ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
+        inputs.put(configNowProperties.FDCN_COMMAND, new PropertyValue("activate_composite", PropertyValue.PropertyTypeEnum.String, false));
+        inputs.put(configNowProperties.FDCN_ENVIRONMENT, new PropertyValue("local", PropertyValue.PropertyTypeEnum.String, false));
+        inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("composites_example",PropertyValue.PropertyTypeEnum.String, false));
+        inputs.put(configNowProperties.FDCN_CONFIG_TEXT, new PropertyValue(propertyReplacements, PropertyValue.PropertyTypeEnum.String, false));
+
+        WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
+        plugin.setWorkflowExecutionContext(context);
+
+        plugin.validate();
+        plugin.execute();
+    }
 }

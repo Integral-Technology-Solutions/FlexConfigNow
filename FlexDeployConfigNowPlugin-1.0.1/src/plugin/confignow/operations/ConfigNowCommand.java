@@ -9,7 +9,14 @@ import flexagon.ff.common.core.logging.FlexLogger;
 import plugin.confignow.BuildCommand;
 import plugin.confignow.configNowProperties;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.DirectoryNotEmptyException;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 
 /**
@@ -111,10 +118,19 @@ public class ConfigNowCommand extends AbstractPluginProvider{
 
         BuildCommand builder = new BuildCommand(getWorkflowExecutionContext());
 
+        /* Need to check for config property replacement first */
+        boolean customFile = configurePropReplacement();
+
+        /* Run configNOW commands using BuildCommand class */
         String[] commandLine = {"ConfigNOW", mCommand, mEnvironment, mConfigFile};
 
         builder.setBuildCommand(commandLine);
         builder.runBuildCommand();
+
+        /* Clean up custom properties file */
+        if(customFile){
+            deleteCustomFile();
+        }
 
         LOG.logInfoExiting(method);
         return PluginResult.createPluginResult(getWorkflowExecutionContext());
@@ -161,6 +177,69 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         }else{
             this.mConfigFile = configFileLoc;
             LOG.logInfo(method, "Properties file validated");
+        }
+
+        LOG.logInfoExiting(method);
+    }
+
+    private boolean configurePropReplacement(){
+        String method = "configurePropReplacement";
+        LOG.logInfoEntering(method, "Validating property replacement");
+        /* First we check to see if property replacement was given */
+        String configText = getStringInput(configNowProperties.FDCN_CONFIG_TEXT);
+        WorkflowExecutionContext workflowExecutionContext = getWorkflowExecutionContext();
+        String configNowHome = workflowExecutionContext.getInstallPluginsDirectory() + File.separator + "configNOW";
+        if(configText == null){
+            LOG.logInfoExiting(method, "No property replacement provided");
+            return false;
+        }else {
+            String fileName = mConfigFile + "_" + workflowExecutionContext.getWorkflowExecutionId();
+            String newConfigFile = configNowHome + File.separator + "config" + File.separator + "environments" + File.separator + mEnvironment + File.separator + fileName + ".properties";
+            BufferedWriter bw = null;
+            FileWriter fw = null;
+            try{
+                fw = new FileWriter(newConfigFile);
+                bw = new BufferedWriter(fw);
+                bw.write("base=config/environments/" + mEnvironment + "/" + mConfigFile + ".properties");
+                bw.newLine();
+                bw.write(configText);
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                try{
+                    if(bw != null){
+                        bw.close();
+                    }
+                    if (fw != null){
+                        fw.close();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            /* At the end, rename the mConfigFile so the correct properties file is selected */
+            this.mConfigFile = fileName;
+            LOG.logInfoExiting(method, "Property replacement complete");
+            return true;
+        }
+    }
+
+    private void deleteCustomFile(){
+        String method = "deleteCustomFile";
+        LOG.logInfoEntering(method, "Removing custom properties file");
+
+        WorkflowExecutionContext workflowExecutionContext = getWorkflowExecutionContext();
+        String configNowHome = workflowExecutionContext.getInstallPluginsDirectory() + File.separator + "configNOW";
+        String fileName = mConfigFile + ".properties";
+        String customLoc = configNowHome + File.separator + "config" + File.separator + "environments" + File.separator + mEnvironment + File.separator;
+        try{
+            Files.delete(Paths.get(customLoc + File.separator + fileName));
+        }catch (NoSuchFileException NF){
+            LOG.logSevere(method, "No custom file: " + fileName + " Exists at: " + customLoc);
+        }catch (DirectoryNotEmptyException NE){
+            LOG.logSevere(method, "Path is not empty");
+        }catch (IOException e){
+            LOG.logSevere(method, "Error deleting custom properties file");
         }
 
         LOG.logInfoExiting(method);
