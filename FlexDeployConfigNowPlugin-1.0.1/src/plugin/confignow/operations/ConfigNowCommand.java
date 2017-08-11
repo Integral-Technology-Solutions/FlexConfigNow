@@ -3,6 +3,8 @@ package plugin.confignow.operations;
 import flexagon.fd.core.plugin.AbstractPluginProvider;
 import flexagon.fd.core.plugin.PluginResult;
 import flexagon.fd.core.workflow.WorkflowExecutionContext;
+import flexagon.ff.common.core.exceptions.FlexCheckedException;
+import flexagon.ff.common.core.exceptions.FlexExternalProcessFailedException;
 import flexagon.ff.common.core.exceptions.FlexInvalidArgumentException;
 import flexagon.ff.common.core.exceptions.FlexMissingArgumentException;
 import flexagon.ff.common.core.logging.FlexLogger;
@@ -18,6 +20,7 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by Matt Spencer on 4/08/2017.
@@ -112,11 +115,13 @@ public class ConfigNowCommand extends AbstractPluginProvider{
     }
 
     @Override
-    public PluginResult execute(){
+    public PluginResult execute() throws FlexCheckedException {
         String method = "execute";
         LOG.logInfoEntering(method);
 
-        BuildCommand builder = new BuildCommand(getWorkflowExecutionContext());
+        WorkflowExecutionContext context = getWorkflowExecutionContext();
+
+        BuildCommand builder = new BuildCommand(context);
 
         /* Need to check for config property replacement first */
         boolean customFile = configurePropReplacement();
@@ -125,15 +130,19 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         String[] commandLine = {"ConfigNOW", mCommand, mEnvironment, mConfigFile};
 
         builder.setBuildCommand(commandLine);
-        builder.runBuildCommand();
+        boolean ex = builder.runBuildCommand();
 
         /* Clean up custom properties file */
         if(customFile){
             deleteCustomFile();
         }
 
+        if(!ex){
+            throw new FlexExternalProcessFailedException(0, Arrays.asList(builder.getBuildCommand()));
+        }
+
         LOG.logInfoExiting(method);
-        return PluginResult.createPluginResult(getWorkflowExecutionContext());
+        return PluginResult.createPluginResult(context);
     }
 
     @Override
@@ -182,7 +191,7 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         LOG.logInfoExiting(method);
     }
 
-    private boolean configurePropReplacement(){
+    private boolean configurePropReplacement() throws FlexCheckedException {
         String method = "configurePropReplacement";
         LOG.logInfoEntering(method, "Validating property replacement");
         /* First we check to see if property replacement was given */
@@ -205,6 +214,8 @@ public class ConfigNowCommand extends AbstractPluginProvider{
                 bw.write(configText);
             } catch (IOException e) {
                 e.printStackTrace();
+                LOG.logSevere(method, "Unable to write to custom properties file!");
+                throw new FlexCheckedException("Creation of custom properties file failed");
             } finally {
                 try{
                     if(bw != null){
@@ -215,6 +226,8 @@ public class ConfigNowCommand extends AbstractPluginProvider{
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
+                    LOG.logSevere(method,"Unable to close custom properties files");
+                    throw new FlexCheckedException("Closing of custom properties file failed");
                 }
             }
             /* At the end, rename the mConfigFile so the correct properties file is selected */
@@ -235,11 +248,11 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         try{
             Files.delete(Paths.get(customLoc + File.separator + fileName));
         }catch (NoSuchFileException NF){
-            LOG.logSevere(method, "No custom file: " + fileName + " Exists at: " + customLoc);
+            LOG.logWarning(method, "No custom file: " + fileName + " Exists at: " + customLoc);
         }catch (DirectoryNotEmptyException NE){
-            LOG.logSevere(method, "Path is not empty");
+            LOG.logWarning(method, "Path is not empty");
         }catch (IOException e){
-            LOG.logSevere(method, "Error deleting custom properties file");
+            LOG.logWarning(method, "Error deleting custom properties file");
         }
 
         LOG.logInfoExiting(method);

@@ -1,6 +1,7 @@
 package plugin.confignow;
 
 import flexagon.fd.core.workflow.WorkflowExecutionContext;
+import flexagon.ff.common.core.exceptions.FlexExternalProcessFailedException;
 import flexagon.ff.common.core.exceptions.FlexInvalidArgumentException;
 import flexagon.ff.common.core.externalprocess.ExternalProcess;
 import flexagon.ff.common.core.logging.FlexLogger;
@@ -31,7 +32,7 @@ public class BuildCommand
         return this.mBuildCommand;
     }
 
-    public void runBuildCommand(){
+    public boolean runBuildCommand() throws FlexExternalProcessFailedException {
         String method = "runBuildCommand";
         LOG.logInfoEntering(method);
         if(!validateBuildCommands()){
@@ -46,6 +47,10 @@ public class BuildCommand
         LOG.logInfo(method, "Executing external process");
         externalProcess.execute();
         LOG.logInfoExiting(method, "Execution complete");
+        if (externalProcess.getProcessError().contains("BUILD FAILED")){
+            return false;
+        }
+        return true;
     }
 
     private boolean validateBuildCommands(){

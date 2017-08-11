@@ -18,21 +18,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="BuildCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BuildCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plugin/confignow/BuildCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1123">
-              <caret line="69" column="41" lean-forward="true" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
+            <state relative-caret-position="420">
+              <caret line="52" column="20" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigNowCommandTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConfigNowCommandTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/ConfigNowCommandTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="155" column="47" lean-forward="false" selection-start-line="155" selection-start-column="47" selection-end-line="155" selection-end-column="47" />
+            <state relative-caret-position="5050">
+              <caret line="208" column="61" lean-forward="false" selection-start-line="208" selection-start-column="61" selection-end-line="208" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,8 +53,30 @@
       <file leaf-file-name="ConfigNowCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/ConfigNowCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+            <state relative-caret-position="395">
+              <caret line="140" column="102" lean-forward="false" selection-start-line="140" selection-start-column="102" selection-end-line="140" selection-end-column="102" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlexCommandExecutionFailedException.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/adflibFlexFndCommonCore.jar!/flexagon/ff/common/core/exceptions/FlexCommandExecutionFailedException.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlexCLIOptions.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/adflibFlexFndCommonCore.jar!/flexagon/ff/common/core/cli/FlexCLIOptions.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -134,11 +156,11 @@
         <option value="$PROJECT_DIR$/src/plugin/confignow/operations/create_domain.java" />
         <option value="$PROJECT_DIR$/plugin/properties/MASTER_PROPERTIES.xml" />
         <option value="$PROJECT_DIR$/plugin/plugin.xml" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/BuildCommand.java" />
         <option value="$PROJECT_DIR$/plugin.xml" />
         <option value="$PROJECT_DIR$/properties/MASTER_PROPERTIES.xml" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/configNowProperties.java" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/test/ConfigNowCommandTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/BuildCommand.java" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/operations/ConfigNowCommand.java" />
       </list>
     </option>
@@ -362,59 +384,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConfigNowCommandTest.correctInputsWithCustom">
-    <configuration default="false" name="ConfigNowCommandTest.missingCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="plugin.confignow.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="FDCN_Plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
-      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.ConfigNowCommandTest" />
-      <option name="METHOD_NAME" value="missingCommandTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ConfigNowCommandTest.missingConfigFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="plugin.confignow.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="FDCN_Plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
-      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.ConfigNowCommandTest" />
-      <option name="METHOD_NAME" value="missingConfigFileTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ConfigNowCommandTest">
     <configuration default="false" name="ConfigNowCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -441,32 +411,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ConfigNowCommandTest.missingEnvironmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="plugin.confignow.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="FDCN_Plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
-      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.ConfigNowCommandTest" />
-      <option name="METHOD_NAME" value="missingEnvironmentTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="ConfigNowCommandTest.correctInputsWithCustom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -480,6 +424,84 @@
       <option name="PACKAGE_NAME" value="plugin.confignow.test" />
       <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.ConfigNowCommandTest" />
       <option name="METHOD_NAME" value="correctInputsWithCustom" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConfigNowCommandTest.correctInputsTestNoCustom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="plugin.confignow.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="FDCN_Plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
+      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.ConfigNowCommandTest" />
+      <option name="METHOD_NAME" value="correctInputsTestNoCustom" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConfigNowCommandTest.correctInputsTestNoCustomBuildFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="plugin.confignow.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="FDCN_Plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
+      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.ConfigNowCommandTest" />
+      <option name="METHOD_NAME" value="correctInputsTestNoCustomBuildFail" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConfigNowCommandTest.correctInputsWithCustomBuildFail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="plugin.confignow.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="FDCN_Plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
+      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.ConfigNowCommandTest" />
+      <option name="METHOD_NAME" value="correctInputsWithCustomBuildFail" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
       <option name="PARAMETERS" value="" />
@@ -910,19 +932,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.missingCommandTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.missingConfigFileTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.missingEnvironmentTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.correctInputsWithCustom" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.correctInputsWithCustom" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.correctInputsTestNoCustom" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.correctInputsTestNoCustomBuildFail" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.correctInputsWithCustomBuildFail" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.correctInputsWithCustom" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.missingEnvironmentTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.missingConfigFileTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.missingCommandTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.correctInputsWithCustomBuildFail" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.correctInputsWithCustom" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.correctInputsTestNoCustom" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest.correctInputsTestNoCustomBuildFail" />
       </list>
     </recent_temporary>
   </component>
@@ -950,44 +972,44 @@
       <workItem from="1502245781449" duration="285000" />
       <workItem from="1502411245825" duration="970000" />
       <workItem from="1502412455903" duration="7431000" />
-      <workItem from="1502426185698" duration="1597000" />
+      <workItem from="1502426185698" duration="5680000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConfigNowCommandTest_correctInputsWithCustom - 2017.08.11 at 14h 42m 10s.xml">
-      <configuration name="ConfigNowCommandTest.correctInputsWithCustom" configurationId="JUnit" />
+    <history-entry file="ConfigNowCommandTest - 2017.08.11 at 16h 11m 08s.xml">
+      <configuration name="ConfigNowCommandTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigNowCommandTest_correctInputsWithCustom - 2017.08.11 at 14h 43m 17s.xml">
-      <configuration name="ConfigNowCommandTest.correctInputsWithCustom" configurationId="JUnit" />
+    <history-entry file="ConfigNowCommandTest_correctInputsWithCustomBuildFail - 2017.08.11 at 15h 55m 28s.xml">
+      <configuration name="ConfigNowCommandTest.correctInputsWithCustomBuildFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigNowCommandTest_correctInputsWithCustom - 2017.08.11 at 14h 45m 23s.xml">
-      <configuration name="ConfigNowCommandTest.correctInputsWithCustom" configurationId="JUnit" />
+    <history-entry file="ConfigNowCommandTest_correctInputsWithCustomBuildFail - 2017.08.11 at 15h 59m 58s.xml">
+      <configuration name="ConfigNowCommandTest.correctInputsWithCustomBuildFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigNowCommandTest_correctInputsWithCustom - 2017.08.11 at 14h 45m 46s.xml">
-      <configuration name="ConfigNowCommandTest.correctInputsWithCustom" configurationId="JUnit" />
+    <history-entry file="ConfigNowCommandTest_correctInputsWithCustomBuildFail - 2017.08.11 at 16h 01m 27s.xml">
+      <configuration name="ConfigNowCommandTest.correctInputsWithCustomBuildFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigNowCommandTest_correctInputsWithCustom - 2017.08.11 at 14h 51m 34s.xml">
-      <configuration name="ConfigNowCommandTest.correctInputsWithCustom" configurationId="JUnit" />
+    <history-entry file="ConfigNowCommandTest_correctInputsWithCustomBuildFail - 2017.08.11 at 16h 01m 53s.xml">
+      <configuration name="ConfigNowCommandTest.correctInputsWithCustomBuildFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigNowCommandTest_correctInputsWithCustom - 2017.08.11 at 14h 58m 25s.xml">
-      <configuration name="ConfigNowCommandTest.correctInputsWithCustom" configurationId="JUnit" />
+    <history-entry file="ConfigNowCommandTest_correctInputsWithCustomBuildFail - 2017.08.11 at 16h 02m 24s.xml">
+      <configuration name="ConfigNowCommandTest.correctInputsWithCustomBuildFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigNowCommandTest_correctInputsWithCustom - 2017.08.11 at 14h 58m 54s.xml">
-      <configuration name="ConfigNowCommandTest.correctInputsWithCustom" configurationId="JUnit" />
+    <history-entry file="ConfigNowCommandTest_correctInputsWithCustomBuildFail - 2017.08.11 at 16h 03m 04s.xml">
+      <configuration name="ConfigNowCommandTest.correctInputsWithCustomBuildFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigNowCommandTest_correctInputsWithCustom - 2017.08.11 at 14h 59m 26s.xml">
-      <configuration name="ConfigNowCommandTest.correctInputsWithCustom" configurationId="JUnit" />
+    <history-entry file="ConfigNowCommandTest_correctInputsWithCustomBuildFail - 2017.08.11 at 16h 03m 25s.xml">
+      <configuration name="ConfigNowCommandTest.correctInputsWithCustomBuildFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigNowCommandTest_correctInputsWithCustom - 2017.08.11 at 14h 59m 43s.xml">
-      <configuration name="ConfigNowCommandTest.correctInputsWithCustom" configurationId="JUnit" />
+    <history-entry file="ConfigNowCommandTest_correctInputsWithCustomBuildFail - 2017.08.11 at 16h 04m 09s.xml">
+      <configuration name="ConfigNowCommandTest.correctInputsWithCustomBuildFail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConfigNowCommandTest_correctInputsWithCustom - 2017.08.11 at 15h 01m 52s.xml">
-      <configuration name="ConfigNowCommandTest.correctInputsWithCustom" configurationId="JUnit" />
+    <history-entry file="ConfigNowCommandTest_correctInputsWithCustomBuildFail - 2017.08.11 at 16h 10m 12s.xml">
+      <configuration name="ConfigNowCommandTest.correctInputsWithCustomBuildFail" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75107000" />
+    <option name="totallyTimeSpent" value="79190000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2869" y="-11" width="2902" height="1582" extended-state="6" />
@@ -1003,7 +1025,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33051446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33051446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1015,7 +1037,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50880903" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50880903" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1032,7 +1054,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1045,8 +1067,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../configNOW_Plugin/sdk_libraries/adflibFlexDeployCore/plugin/AbstractPluginProvider.class" />
-    <entry file="file://$PROJECT_DIR$/src/flexagon/fd/plugin/confignow/operations/create_domain.java" />
     <entry file="file://$PROJECT_DIR$/src/flexagon/fd/core/plugin/AbstractPluginProvider.class" />
     <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/Build.java" />
     <entry file="jar://$PROJECT_DIR$/lib/adflibFlexFndCommonCore.jar!/flexagon/ff/common/core/logging/FlexLogger.class">
@@ -1288,13 +1308,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin/properties/MASTER_PROPERTIES.xml" />
     <entry file="file://$PROJECT_DIR$/plugin/plugin.xml" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -1311,6 +1324,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/adflibFlexFndCommonCore.jar!/flexagon/ff/common/core/exceptions/FlexCommandExecutionFailedException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/adflibFlexFndCommonCore.jar!/flexagon/ff/common/core/cli/FlexCLIOptions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/BuildCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="52" column="20" lean-forward="false" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/plugin/confignow/configNowProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1319,29 +1364,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/ConfigNowCommandTest.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/ConfigNowCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="155" column="47" lean-forward="false" selection-start-line="155" selection-start-column="47" selection-end-line="155" selection-end-column="47" />
+        <state relative-caret-position="395">
+          <caret line="140" column="102" lean-forward="false" selection-start-line="140" selection-start-column="102" selection-end-line="140" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/ConfigNowCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/ConfigNowCommandTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/BuildCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1123">
-          <caret line="69" column="41" lean-forward="true" selection-start-line="69" selection-start-column="41" selection-end-line="69" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="5050">
+          <caret line="208" column="61" lean-forward="false" selection-start-line="208" selection-start-column="61" selection-end-line="208" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
