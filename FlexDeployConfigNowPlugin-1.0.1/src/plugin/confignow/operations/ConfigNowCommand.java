@@ -129,8 +129,9 @@ public class ConfigNowCommand extends AbstractPluginProvider{
         String configNowHome = workflowExecutionContext.getInstallPluginsDirectory() + File.separator + "configNOW";
 
         String command = getStringInput(configNowProperties.FDCN_COMMAND);
-        String environment = getWorkflowExecutionContext().getEnvironment().getCode();
+        String environment = getStringInput(configNowProperties.FDCN_ENVIRONMENT);
         String configFileLoc = getStringInput(configNowProperties.FDCN_CONFIG_FILE);
+        String configText = getStringInput(configNowProperties.FDCN_CONFIG_TEXT);
 
         /* Validation of ConfigNOW command provided */
         if(command == null){
@@ -153,6 +154,7 @@ public class ConfigNowCommand extends AbstractPluginProvider{
             LOG.logInfo(method, "Environment directory validated");
         }
 
+        /* Validation of config file */
         File configFile = new File(configNowHome + File.separator + "config" + File.separator + "environments" + File.separator + environment + File.separator + configFileLoc + ".properties");
         if(!configFile.exists()){
             throw new FlexInvalidArgumentException("properties file name does not exist");

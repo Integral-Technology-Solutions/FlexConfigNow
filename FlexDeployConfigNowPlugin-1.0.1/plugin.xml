@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PluginDefinition xmlns="http://flexagon.com/deploy/plugin">
   <Name>IntegralConfigNOWPlugin</Name>
-  <PluginDisplayName>ConfigNOW</PluginDisplayName>
+  <PluginDisplayName>ConfigNOWPlugin</PluginDisplayName>
   <Description>A plugin to execute ConfigNOW commands</Description>
   <TechnologyGroup>Server Management</TechnologyGroup>
   <SubTechnologyGroup>ConfigNOW</SubTechnologyGroup>
   <Vendor>Integral Technology Solutions</Vendor>
   <MaxConcurrentThreads>-1</MaxConcurrentThreads>
-  <Version>0.7</Version>
+  <Version>4.0.1</Version>
   <Operations>
     <Operation>
       <Name>ConfigNowCommand</Name>
       <Description>Runs ConfigNOW commands</Description>
       <Target>plugin.confignow.operations.ConfigNowCommand</Target>
       <PropertyKeys>
-        <Property>FDCN_COMMAND</Property>
-        <Property>FDCN_CONFIG_FILE</Property>
+        <PropertyKey>FDCN_COMMAND</PropertyKey>
+        <PropertyKey>FDCN_ENVIRONMENT</PropertyKey>
+        <PropertyKey>FDCN_CONFIG_FILE</PropertyKey>
+        <PropertyKey>FDCN_CONFIG_TEXT</PropertyKey>
       </PropertyKeys>
       <Inputs>
         <AllowsUserDefined>false</AllowsUserDefined>
@@ -32,7 +34,7 @@
         </Execution>
       </EndPointSpecification>
       <ConsumesArtifacts>false</ConsumesArtifacts>
-      <ProducesArtifacts>true</ProducesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
     </Operation>
   </Operations>
 </PluginDefinition>

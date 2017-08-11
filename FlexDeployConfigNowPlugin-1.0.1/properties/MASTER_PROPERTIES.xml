@@ -6,6 +6,15 @@
         <Description>The ConfigNOW command to be ran</Description>
         <Scope>PROJECT</Scope>
         <DataType>String</DataType>
+        <IsEncrypted>false</IsEncrypted>
+        <IsRequired>true</IsRequired>
+        <Validators/>
+    </Property>
+    <Property>
+        <Name>FDCN_ENVIRONMENT</Name>
+        <Description>The Environment folder to search for configuration files in</Description>
+        <Scope>PROJECT</Scope>
+        <DataType>String</DataType>
         <SubDataType>DIRECTORY</SubDataType>
         <IsEncrypted>false</IsEncrypted>
         <IsRequired>true</IsRequired>
@@ -18,6 +27,15 @@
         <DataType>String</DataType>
         <IsEncrypted>false</IsEncrypted>
         <IsRequired>true</IsRequired>
+        <Validators/>
+    </Property>
+    <Property>
+        <Name>FDCN_CONFIG_TEXT</Name>
+        <Description>If you would like to override any base properties, specify them here</Description>
+        <Scope>PROJECT</Scope>
+        <DataType>String</DataType>
+        <IsEncrypted>false</IsEncrypted>
+        <IsRequired>false</IsRequired>
         <Validators/>
     </Property>
 </PropertyList>
