@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PluginDefinition xmlns="http://flexagon.com/deploy/plugin">
-  <Name>IntegralConfigNOWPlugin</Name>
-  <PluginDisplayName>ConfigNOWPlugin</PluginDisplayName>
+  <Name>FlexagonConfigNOWPlugin</Name>
+  <PluginDisplayName>ConfigNOW</PluginDisplayName>
   <Description>A plugin to execute ConfigNOW commands</Description>
-  <TechnologyGroup>Server Management</TechnologyGroup>
-  <SubTechnologyGroup>ConfigNOW</SubTechnologyGroup>
-  <Vendor>Integral Technology Solutions</Vendor>
+  <TechnologyGroup>General</TechnologyGroup>
+  <SubTechnologyGroup>Script</SubTechnologyGroup>
+  <Vendor>Flexagon</Vendor>
   <MaxConcurrentThreads>-1</MaxConcurrentThreads>
   <Version>4.0.1</Version>
   <Operations>

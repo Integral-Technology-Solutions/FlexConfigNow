@@ -2,15 +2,25 @@
   <artifact type="jar" name="FDCN_Plugin:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/FDCN_Plugin_jar</output-path>
     <root id="archive" name="FDCN_Plugin.jar">
-      <element id="module-output" name="FDCN_Plugin" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/adflibFlexDeployCore.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/adflibFlexFndCommonCore.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/plugins/junit/lib/junit-jupiter-api-5.0.0-M3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/plugins/junit/lib/opentest4j-1.0.0-M1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/lib/commons-io-2.4.jar" path-in-jar="/" />
-      <element id="dir-copy" path="$PROJECT_DIR$" />
+      <element id="directory" name="lib">
+        <element id="archive" name="flexdeployconfignowplugin.jar">
+          <element id="dir-copy" path="$PROJECT_DIR$/src" />
+          <element id="directory" name="META-INF">
+            <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+          </element>
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/lib/adflibFlexDeployCore.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/commons-io-2.4.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/lib/adflibFlexFndCommonCore.jar" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.xml" />
+      <element id="directory" name="properties">
+        <element id="file-copy" path="$PROJECT_DIR$/properties/MASTER_PROPERTIES.xml" />
+      </element>
+      <element id="directory" name="bin" />
+      <element id="directory" name="configNOW">
+        <element id="dir-copy" path="$PROJECT_DIR$/configNOW" />
+      </element>
     </root>
   </artifact>
 </component>
