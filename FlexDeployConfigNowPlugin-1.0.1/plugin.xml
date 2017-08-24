@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PluginDefinition xmlns="http://flexagon.com/deploy/plugin">
-  <Name>FlexagonConfigNOWPlugin</Name>
+  <Name>IntegralConfigNOWPlugin</Name>
   <PluginDisplayName>ConfigNOW</PluginDisplayName>
   <Description>A plugin to execute ConfigNOW commands</Description>
   <TechnologyGroup>General</TechnologyGroup>
   <SubTechnologyGroup>Script</SubTechnologyGroup>
-  <Vendor>Flexagon</Vendor>
+  <Vendor>Integral Technology Solutions</Vendor>
   <MaxConcurrentThreads>-1</MaxConcurrentThreads>
-  <Version>4.0.1</Version>
+  <Version>2.0</Version>
   <Operations>
     <Operation>
-      <Name>ConfigNowCommand</Name>
-      <Description>Runs ConfigNOW commands</Description>
-      <Target>plugin.confignow.operations.ConfigNowCommand</Target>
-      <PropertyKeys>
-        <PropertyKey>FDCN_COMMAND</PropertyKey>
-        <PropertyKey>FDCN_ENVIRONMENT</PropertyKey>
-        <PropertyKey>FDCN_CONFIG_FILE</PropertyKey>
-        <PropertyKey>FDCN_CONFIG_TEXT</PropertyKey>
-      </PropertyKeys>
+      <Name>Create Domain</Name>
+      <Description>Create a new web logic domain</Description>
+      <Target>plugin.confignow.operations.createDomain</Target>
+      <PropertyKeys/>
       <Inputs>
         <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
       </Inputs>
       <Outputs>
         <AllowsUserDefined>false</AllowsUserDefined>
@@ -33,7 +39,51 @@
           <Any/>
         </Execution>
       </EndPointSpecification>
-      <ConsumesArtifacts>false</ConsumesArtifacts>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Custom Command</Name>
+      <Description>Runs a custom ConfigNOW command</Description>
+      <Target>plugin.confignow.operations.customCommand</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+        <Input>
+          <Name>FDCN_COMMAND</Name>
+          <DataType>String</DataType>
+          <Description>Name of custom command file to be used</Description>
+          <DisplayName>command name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
       <ProducesArtifacts>false</ProducesArtifacts>
     </Operation>
   </Operations>
