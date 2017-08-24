@@ -82,7 +82,9 @@ public class customCommand extends AbstractPluginProvider{
 
         /* Validation of config file */
         File configFile = new File(configNowHome + File.separator + "config" + File.separator + "environments" + File.separator + environment + File.separator + configFileLoc + ".properties");
-        if(!configFile.exists()){
+        if(configFileLoc == null){
+            throw new FlexMissingArgumentException("No config file provided");
+        }else if(!configFile.exists()){
             throw new FlexInvalidArgumentException("properties file name does not exist");
         }else{
             this.mConfigFile = configFileLoc;

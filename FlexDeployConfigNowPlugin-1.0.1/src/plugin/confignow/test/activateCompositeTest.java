@@ -6,6 +6,8 @@ import flexagon.fd.core.workflow.MockWorkflowExecutionContext;
 import flexagon.fd.core.workflow.WorkflowExecutionContext;
 import flexagon.ff.common.core.exceptions.FlexCheckedException;
 import flexagon.ff.common.core.exceptions.FlexExternalProcessFailedException;
+import flexagon.ff.common.core.exceptions.FlexInvalidArgumentException;
+import flexagon.ff.common.core.exceptions.FlexMissingArgumentException;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import plugin.confignow.configNowProperties;
@@ -39,6 +41,33 @@ public class activateCompositeTest {
 
         ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
         inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("soa11g", PropertyValue.PropertyTypeEnum.String, false));
+
+        WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
+        pluginProvider.setWorkflowExecutionContext(context);
+
+        pluginProvider.validate();
+        pluginProvider.execute();
+    }
+
+    @Test(expected = FlexMissingArgumentException.class)
+    public void activateCompositeMissingConfigFile() throws FlexCheckedException {
+        AbstractPluginProvider pluginProvider = new activateComposite();
+
+        ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
+
+        WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
+        pluginProvider.setWorkflowExecutionContext(context);
+
+        pluginProvider.validate();
+        pluginProvider.execute();
+    }
+
+    @Test(expected = FlexInvalidArgumentException.class)
+    public void activateCompositeInvalidConfigFile() throws FlexCheckedException {
+        AbstractPluginProvider pluginProvider = new activateComposite();
+
+        ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
+        inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("simple12c_doesnt_exist", PropertyValue.PropertyTypeEnum.String, false));
 
         WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
         pluginProvider.setWorkflowExecutionContext(context);
