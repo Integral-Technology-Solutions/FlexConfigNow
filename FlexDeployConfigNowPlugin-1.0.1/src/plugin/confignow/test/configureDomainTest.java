@@ -11,16 +11,16 @@ import flexagon.ff.common.core.exceptions.FlexMissingArgumentException;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import plugin.confignow.configNowProperties;
-import plugin.confignow.operations.activateComposite;
+import plugin.confignow.operations.configureDomain;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Created by Matt Spencer on 24/08/2017.
+ * Created by Matt on 25/08/2017.
  */
-public class activateCompositeTest {
+public class configureDomainTest {
     static String fileName1 = "TestFile1.txt";
     static String subFolder = "subFolder";
 
@@ -36,11 +36,11 @@ public class activateCompositeTest {
     /* This test will vaildate correctly but we expect the confignow command to fail as it cannot create a local domain
      * The only place the externalprocessfailedexception is thrown is if the confignow command fails (will locally) */
     @Test(expected = FlexExternalProcessFailedException.class)
-    public void activeCompositeCorrectConfig() throws FlexCheckedException {
-        AbstractPluginProvider pluginProvider = new activateComposite();
+    public void configureDomainCorrectConfig() throws FlexCheckedException {
+        AbstractPluginProvider pluginProvider = new configureDomain();
 
         ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
-        inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("soa11g", PropertyValue.PropertyTypeEnum.String, false));
+        inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("jms_example", PropertyValue.PropertyTypeEnum.String, false));
 
         WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
         pluginProvider.setWorkflowExecutionContext(context);
@@ -50,8 +50,8 @@ public class activateCompositeTest {
     }
 
     @Test(expected = FlexMissingArgumentException.class)
-    public void activateCompositeMissingConfigFile() throws FlexCheckedException {
-        AbstractPluginProvider pluginProvider = new activateComposite();
+    public void configureDomainMissingConfigFile() throws FlexCheckedException {
+        AbstractPluginProvider pluginProvider = new configureDomain();
 
         ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
 
@@ -63,11 +63,11 @@ public class activateCompositeTest {
     }
 
     @Test(expected = FlexInvalidArgumentException.class)
-    public void activateCompositeInvalidConfigFile() throws FlexCheckedException {
-        AbstractPluginProvider pluginProvider = new activateComposite();
+    public void configureDomainInvalidConfigFile() throws FlexCheckedException {
+        AbstractPluginProvider pluginProvider = new configureDomain();
 
         ConcurrentHashMap<String, PropertyValue> inputs = new ConcurrentHashMap<>();
-        inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("simple12c_doesnt_exist", PropertyValue.PropertyTypeEnum.String, false));
+        inputs.put(configNowProperties.FDCN_CONFIG_FILE, new PropertyValue("jms_example_doesnt_exist", PropertyValue.PropertyTypeEnum.String, false));
 
         WorkflowExecutionContext context = new MockWorkflowExecutionContext(inputs);
         pluginProvider.setWorkflowExecutionContext(context);

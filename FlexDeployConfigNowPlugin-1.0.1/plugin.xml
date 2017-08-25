@@ -7,8 +7,74 @@
   <SubTechnologyGroup>Script</SubTechnologyGroup>
   <Vendor>Integral Technology Solutions</Vendor>
   <MaxConcurrentThreads>-1</MaxConcurrentThreads>
-  <Version>2.0</Version>
+  <Version>2.0.1</Version>
   <Operations>
+    <Operation>
+      <Name>Activate Composite</Name>
+      <Description>Activate a previously retired SCA composite application, allowing it to resume processing requests.</Description>
+      <Target>plugin.confignow.operations.activateComposite</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Configure Domain</Name>
+      <Description>Creates any resources defined in the environment and configuration file referenced as part of invocation.</Description>
+      <Target>plugin.confignow.operations.configureDomain</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
     <Operation>
       <Name>Create Domain</Name>
       <Description>Create a new web logic domain</Description>

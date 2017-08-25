@@ -3,15 +3,10 @@ package plugin.confignow.operations;
 import flexagon.fd.core.plugin.AbstractPluginProvider;
 import flexagon.fd.core.plugin.PluginResult;
 import flexagon.fd.core.workflow.WorkflowExecutionContext;
-import flexagon.ff.common.core.exceptions.FlexExternalProcessFailedException;
-import flexagon.ff.common.core.exceptions.FlexInvalidArgumentException;
-import flexagon.ff.common.core.exceptions.FlexMissingArgumentException;
 import flexagon.ff.common.core.logging.FlexLogger;
-import plugin.confignow.BuildCommand;
 import plugin.confignow.configNowProperties;
-
-import java.io.File;
-import java.util.Arrays;
+import plugin.confignow.executionHelper;
+import plugin.confignow.validationHelper;
 
 /**
  * Created by Matt Spencer on 24/08/2017.
@@ -31,16 +26,9 @@ public class createDomain extends AbstractPluginProvider{
         LOG.logInfoEntering(method);
 
         WorkflowExecutionContext context = getWorkflowExecutionContext();
+        String command = "create_domain";
 
-        String[] commandLine = {"ConfigNOW", "create_domain", mEnvironment, mConfigFile};
-
-        BuildCommand buildCommand = new BuildCommand(context);
-        buildCommand.setBuildCommand(commandLine);
-        boolean result = buildCommand.runBuildCommand();
-
-        if(!result){
-            throw new FlexExternalProcessFailedException(0, Arrays.asList(buildCommand.getBuildCommand()));
-        }
+        executionHelper.executeCommand(context, command, mEnvironment, mConfigFile);
 
         LOG.logInfoExiting(method);
         return PluginResult.createPluginResult(context);
@@ -53,30 +41,10 @@ public class createDomain extends AbstractPluginProvider{
         LOG.logInfoEntering(method);
 
         WorkflowExecutionContext workflowExecutionContext = getWorkflowExecutionContext();
-        String configNowHome = workflowExecutionContext.getInstallPluginsDirectory() + File.separator + "configNOW";
-        String environment = workflowExecutionContext.getEnvironment().getCode();
-        String configFileLoc = getStringInput(configNowProperties.FDCN_CONFIG_FILE);
-
-        /* Validation of environment provided */
-        File environmentDir = new File(configNowHome + File.separator + "config" + File.separator + "environments" + File.separator + environment);
-        if(environment == null){
-            throw new FlexMissingArgumentException("No environment directory provided");
-        }else if (!environmentDir.exists()){
-            throw new FlexInvalidArgumentException("Environment directory doesn't exist");
-        }else{
-            this.mEnvironment = environment;
-            LOG.logInfo(method, "Environment directory validated");
-        }
-
-        /* Validation of config file */
-        File configFile = new File(configNowHome + File.separator + "config" + File.separator + "environments" + File.separator + environment + File.separator + configFileLoc + ".properties");
-        if(configFileLoc == null){
-            throw new FlexMissingArgumentException("No config file provided");
-        }else if(!configFile.exists()){
-            throw new FlexInvalidArgumentException("properties file name does not exist");
-        }else{
-            this.mConfigFile = configFileLoc;
-            LOG.logInfo(method, "Properties file validated");
+        String configFile = getStringInput(configNowProperties.FDCN_CONFIG_FILE);
+        if(validationHelper.validateInputs(workflowExecutionContext, LOG, configFile)){
+            this.mConfigFile = configFile;
+            this.mEnvironment = workflowExecutionContext.getEnvironment().getCode();
         }
 
         LOG.logInfoExiting(method);
