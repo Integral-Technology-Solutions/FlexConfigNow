@@ -11,7 +11,7 @@ import plugin.confignow.validationHelper;
 /**
  * Created by Matt Spencer on 30/08/2017.
  */
-public class configureNodeManager extends AbstractPluginProvider{
+public class configureNodeManager extends AbstractPluginProvider {
 
     private static final String CLZ_NAM = configureNodeManager.class.getName();
     private static final FlexLogger LOG = FlexLogger.getLogger(CLZ_NAM);

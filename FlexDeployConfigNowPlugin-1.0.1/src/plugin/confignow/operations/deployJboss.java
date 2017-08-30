@@ -26,7 +26,7 @@ public class deployJboss extends AbstractPluginProvider {
         LOG.logInfoEntering(method);
 
         WorkflowExecutionContext context = getWorkflowExecutionContext();
-        String command = "deploy_boss_app";
+        String command = "deploy_jboss_app";
 
         executionHelper.executeCommand(context, command, mEnvironment, mConfigFile);
 

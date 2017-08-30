@@ -21,19 +21,17 @@
       <file leaf-file-name="deployOsbConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployOsbConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
+            <state relative-caret-position="0">
               <caret line="50" column="5" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="50" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
+            <state relative-caret-position="456">
               <caret line="1478" column="21" lean-forward="true" selection-start-line="1478" selection-start-column="21" selection-end-line="1478" selection-end-column="21" />
               <folding />
             </state>
@@ -43,8 +41,8 @@
       <file leaf-file-name="reloadTomcat.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/reloadTomcat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            <state relative-caret-position="220">
+              <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,11 +50,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="passwordEncrypter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/passwordEncrypter.java">
+      <file leaf-file-name="activateCompositeTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/activateCompositeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1145">
-              <caret line="50" column="5" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="37" column="62" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="undeployTomcatTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/undeployTomcatTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,57 +107,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/plugin/confignow/test/activateCompositeTest.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/test/configureDomainTest.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/validationHelper.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/configureDomain.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/executionHelper.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/createDomain.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/activateComposite.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/customCommand.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/configureNodeManager.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/configureObpm.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/DbSwitchover.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/deployApps.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/deployComposite.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/deployCompositeCp.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/deployOsbConfig.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/opatchApply.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/opatchLsInventory.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/opatchRollback.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/passwordEncrypter.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/setDefaultComposite.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/setupOerReports.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/shutdownAllServers.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/startComposite.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/startWlsAdmin.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/stopWldAdmin.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/stopWlsAdmin.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/undeployComposite.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/stopComposite.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/addUser.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/startJboss.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/stopJboss.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/deployJboss.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/undeployJboss.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/remoteDeployApp.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/remoteUndeployApp.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/runCli.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/configureDatasource.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/stopFuse.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/startKarafSession.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/deployFuseApp.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/undeployFuseApp.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/startFuse.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/startAmq.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/stopAmq.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/startTomcat.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/stopTomcat.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/addTomcatUser.java" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/operations/deployTomcat.java" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/operations/undeployTomcat.java" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/operations/reloadTomcat.java" />
         <option value="$PROJECT_DIR$/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/addTomcatUserTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/addUserTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/configureDatasourceTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/configureNodeManager.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/configureNodeManager.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/passwordEncrypterTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/configureNodeManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/configureObpmTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/DbSwitchoverTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/deployAppsTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/deployCompositeTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/deployCompositeCpTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/deployFuseAppTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/deployJbossTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/deployJboss.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/deployOsbConfigTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/deployTomcatTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/oPatchApplyTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/oPatchLsInventoryTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/opatchLsInventoryTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/opatchRollbackTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/reloadTomcatTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/remoteDeployAppTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/remoteUndeployAppTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/runCliTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/setDefaultCompositeTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/setupOerReports.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/setupOerReportsTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/shutdownAllServersTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/startAmqTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/startCompositeTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/startFuseTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/startKarafSession.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/startKarafSession.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/startKarafSessionTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/startTomcatTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/startWlsAdminTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/stopAmqTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/stopCompositeTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/stopFuseTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/stopJbossTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/stopTomcatTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/stopWlsAdminTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/undeployCompositeTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/undeployFuseAppTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/undeployJbossTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/undeployTomcatTest.java" />
       </list>
     </option>
   </component>
@@ -294,8 +304,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.customCommandTest">
-    <configuration default="false" name="ConfigNowCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.undeployTomcatTest">
+    <configuration default="false" name="undeployCompositeTest.undeployCompositeCorrectConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="plugin.confignow.test.*" />
@@ -306,7 +316,33 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="plugin.confignow.test" />
-      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.ConfigNowCommandTest" />
+      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.undeployCompositeTest" />
+      <option name="METHOD_NAME" value="undeployCompositeCorrectConfig" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="undeployFuseAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="plugin.confignow.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="FDCN_Plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
+      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.undeployFuseAppTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
@@ -321,7 +357,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="createDomainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="undeployFuseAppTest.undeployFuseAppCorrectConfig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="plugin.confignow.test.*" />
@@ -332,7 +368,33 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="plugin.confignow.test" />
-      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.createDomainTest" />
+      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.undeployFuseAppTest" />
+      <option name="METHOD_NAME" value="undeployFuseAppCorrectConfig" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="undeployJbossTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="plugin.confignow.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="FDCN_Plugin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
+      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.undeployJbossTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
@@ -347,7 +409,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="activateCompositeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="undeployTomcatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="plugin.confignow.test.*" />
@@ -358,59 +420,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="plugin.confignow.test" />
-      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.activateCompositeTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="customCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="plugin.confignow.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="FDCN_Plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
-      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.customCommandTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="configureDomainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="plugin.confignow.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="FDCN_Plugin" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
-      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.configureDomainTest" />
+      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.undeployTomcatTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
@@ -842,19 +852,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.createDomainTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.activateCompositeTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.customCommandTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.configureDomainTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.undeployCompositeTest.undeployCompositeCorrectConfig" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.undeployFuseAppTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.undeployFuseAppTest.undeployFuseAppCorrectConfig" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.undeployJbossTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.undeployTomcatTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.customCommandTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.createDomainTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.configureDomainTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.activateCompositeTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ConfigNowCommandTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.undeployTomcatTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.undeployJbossTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.undeployFuseAppTest.undeployFuseAppCorrectConfig" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.undeployFuseAppTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.undeployCompositeTest.undeployCompositeCorrectConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -890,44 +900,44 @@
       <workItem from="1503614893780" duration="2071000" />
       <workItem from="1503619310030" duration="5407000" />
       <workItem from="1504048081239" duration="4705000" />
-      <workItem from="1504052834434" duration="788000" />
+      <workItem from="1504052834434" duration="7523000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="activateCompositeTest - 2017.08.25 at 10h 57m 18s.xml">
-      <configuration name="activateCompositeTest" configurationId="JUnit" />
+    <history-entry file="stopTomcatTest - 2017.08.30 at 12h 31m 00s.xml">
+      <configuration name="stopTomcatTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="activateCompositeTest - 2017.08.25 at 10h 58m 10s.xml">
-      <configuration name="activateCompositeTest" configurationId="JUnit" />
+    <history-entry file="stopTomcatTest_stopTomcatCorrectConfig - 2017.08.30 at 12h 31m 17s.xml">
+      <configuration name="stopTomcatTest.stopTomcatCorrectConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="configureDomainTest - 2017.08.25 at 11h 10m 02s.xml">
-      <configuration name="configureDomainTest" configurationId="JUnit" />
+    <history-entry file="stopWlsAdminTest - 2017.08.30 at 12h 32m 12s.xml">
+      <configuration name="stopWlsAdminTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="configureDomainTest - 2017.08.25 at 11h 41m 17s.xml">
-      <configuration name="configureDomainTest" configurationId="JUnit" />
+    <history-entry file="stopWlsAdminTest_stopWlsAdminCorrectConfig - 2017.08.30 at 12h 32m 29s.xml">
+      <configuration name="stopWlsAdminTest.stopWlsAdminCorrectConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="configureDomainTest - 2017.08.25 at 12h 02m 02s.xml">
-      <configuration name="configureDomainTest" configurationId="JUnit" />
+    <history-entry file="undeployCompositeTest - 2017.08.30 at 12h 33m 22s.xml">
+      <configuration name="undeployCompositeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="createDomainTest - 2017.08.25 at 11h 00m 07s.xml">
-      <configuration name="createDomainTest" configurationId="JUnit" />
+    <history-entry file="undeployCompositeTest_undeployCompositeCorrectConfig - 2017.08.30 at 12h 34m 21s.xml">
+      <configuration name="undeployCompositeTest.undeployCompositeCorrectConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="createDomainTest - 2017.08.25 at 12h 05m 32s.xml">
-      <configuration name="createDomainTest" configurationId="JUnit" />
+    <history-entry file="undeployFuseAppTest - 2017.08.30 at 12h 35m 21s.xml">
+      <configuration name="undeployFuseAppTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="createDomainTest - 2017.08.25 at 12h 05m 52s.xml">
-      <configuration name="createDomainTest" configurationId="JUnit" />
+    <history-entry file="undeployFuseAppTest_undeployFuseAppCorrectConfig - 2017.08.30 at 12h 35m 37s.xml">
+      <configuration name="undeployFuseAppTest.undeployFuseAppCorrectConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="customCommandTest - 2017.08.25 at 11h 00m 49s.xml">
-      <configuration name="customCommandTest" configurationId="JUnit" />
+    <history-entry file="undeployJbossTest - 2017.08.30 at 12h 36m 29s.xml">
+      <configuration name="undeployJbossTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="customCommandTest - 2017.08.25 at 12h 06m 19s.xml">
-      <configuration name="customCommandTest" configurationId="JUnit" />
+    <history-entry file="undeployTomcatTest - 2017.08.30 at 12h 37m 28s.xml">
+      <configuration name="undeployTomcatTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112463000" />
+    <option name="totallyTimeSpent" value="119198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2869" y="-11" width="2902" height="1582" extended-state="6" />
@@ -936,13 +946,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53347427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32417196" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -959,7 +970,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -972,7 +982,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="33" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -985,357 +995,56 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/createDomain.java">
+    <entry file="file://$PROJECT_DIR$/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        <state relative-caret-position="456">
+          <caret line="1478" column="21" lean-forward="true" selection-start-line="1478" selection-start-column="21" selection-end-line="1478" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/activateComposite.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/addTomcatUserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/customCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/customCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/configureDomainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/activateCompositeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/createDomainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1295">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/configureNodeManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/DbSwitchover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/configureObpm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployApps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployComposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployCompositeCp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="52" lean-forward="true" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployOsbConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="50" column="5" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="1270">
+          <caret line="69" column="89" lean-forward="false" selection-start-line="69" selection-start-column="89" selection-end-line="69" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/opatchApply.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/addUserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1145">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/opatchLsInventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1145">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/opatchRollback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="43" lean-forward="true" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/configureDomain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1145">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/setDefaultComposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/setupOerReports.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/shutdownAllServers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/startComposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/startWlsAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/stopWldAdmin.java" />
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/stopWlsAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/undeployComposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="44" lean-forward="false" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/stopComposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/addUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/startJboss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/stopJboss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployJboss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/undeployJboss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/remoteDeployApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/remoteUndeployApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/runCli.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/configureDatasource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/stopFuse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/startKarafSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployFuseApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/undeployFuseApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/startFuse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="476">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/startAmq.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/configureDatasourceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="35" lean-forward="false" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        <state relative-caret-position="-165">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/stopAmq.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/configureNodeManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="39" column="68" lean-forward="true" selection-start-line="39" selection-start-column="68" selection-end-line="39" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/startTomcat.java">
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/passwordEncrypterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/stopTomcat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/addTomcatUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="41" lean-forward="false" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployTomcat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/undeployTomcat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="45" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        <state relative-caret-position="635">
+          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1344,8 +1053,272 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/passwordEncrypter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1145">
-          <caret line="50" column="5" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="220">
+          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/configureNodeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/configureNodeManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/configureObpmTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="41" column="84" lean-forward="true" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/validationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/DbSwitchoverTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/deployAppsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/deployCompositeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="42" column="94" lean-forward="false" selection-start-line="42" selection-start-column="94" selection-end-line="42" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/deployCompositeCpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="42" column="82" lean-forward="false" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/deployFuseAppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployJboss.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/deployJbossTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/deployOsbConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="42" column="82" lean-forward="false" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/deployTomcatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/oPatchApplyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="42" column="99" lean-forward="false" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/opatchLsInventoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="42" column="82" lean-forward="false" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/opatchRollbackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="42" column="82" lean-forward="false" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/reloadTomcatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/remoteDeployAppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/remoteUndeployAppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/runCliTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/setDefaultCompositeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="38" column="35" lean-forward="false" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/setupOerReports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/setupOerReportsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="42" column="76" lean-forward="false" selection-start-line="42" selection-start-column="76" selection-end-line="42" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/shutdownAllServersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/startAmqTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="42" column="87" lean-forward="false" selection-start-line="42" selection-start-column="87" selection-end-line="42" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/startCompositeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/startFuseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1354,19 +1327,167 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/reloadTomcat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        <state relative-caret-position="220">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.xml">
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/startKarafSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="1478" column="21" lean-forward="true" selection-start-line="1478" selection-start-column="21" selection-end-line="1478" selection-end-column="21" />
+        <state relative-caret-position="135">
+          <caret line="39" column="61" lean-forward="true" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/startKarafSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="63" lean-forward="true" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/startKarafSessionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="42" column="88" lean-forward="false" selection-start-line="42" selection-start-column="88" selection-end-line="42" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/startTomcatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/startWlsAdminTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/stopAmqTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="42" column="87" lean-forward="false" selection-start-line="42" selection-start-column="87" selection-end-line="42" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/stopCompositeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/stopFuseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="42" column="88" lean-forward="false" selection-start-line="42" selection-start-column="88" selection-end-line="42" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/stopJbossTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/stopTomcatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/stopWlsAdminTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/undeployCompositeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="42" column="94" lean-forward="false" selection-start-line="42" selection-start-column="94" selection-end-line="42" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/undeployFuseAppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/undeployJbossTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="42" column="89" lean-forward="false" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/activateCompositeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="37" column="62" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/undeployTomcatTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
