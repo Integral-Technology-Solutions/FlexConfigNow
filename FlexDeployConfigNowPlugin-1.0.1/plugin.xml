@@ -152,5 +152,632 @@
       <ConsumesArtifacts>true</ConsumesArtifacts>
       <ProducesArtifacts>false</ProducesArtifacts>
     </Operation>
+    <Operation>
+      <Name>Configure Node Manager</Name>
+      <Description>configures the node manager home for a WebLogic Server installation, creating all necessary configuration and security files.</Description>
+      <Target>plugin.confignow.operations.configureNodeManager</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Configure OBPM</Name>
+      <Description>configures the deployable applications and database schema for OBPM 10g prior to deployment to a WebLogic Server environment.</Description>
+      <Target>plugin.confignow.operations.configureObpm</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>DB Switchover</Name>
+      <Description>performs a failover of a RAC database configuration between RAC sites. The current value of the rac.site configuration property in configuration files for the environment determines the RAC site that will be failed over to.</Description>
+      <Target>plugin.confignow.operations.DbSwitchover</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+    <Name>Deploy Apps</Name>
+    <Description>deploys applications to configured targets for a WebLogic domain.</Description>
+    <Target>plugin.confignow.operations.deployApps</Target>
+    <PropertyKeys/>
+    <Inputs>
+      <AllowsUserDefined>false</AllowsUserDefined>
+      <Input>
+        <Name>FDCN_CONFIG_FILE</Name>
+        <DataType>String</DataType>
+        <Description>Properties file to used by configNOW</Description>
+        <DisplayName>Properties file name</DisplayName>
+        <IsDefaultValueExpression>false</IsDefaultValueExpression>
+        <IsRequired>true</IsRequired>
+        <IsEncrypted>false</IsEncrypted>
+        <DisplayRows>1</DisplayRows>
+        <DisplayColumns>120</DisplayColumns>
+      </Input>
+    </Inputs>
+    <Outputs>
+      <AllowsUserDefined>false</AllowsUserDefined>
+    </Outputs>
+    <EndPointSpecification>
+      <Selection>
+        <All/>
+      </Selection>
+      <Execution>
+        <Any/>
+      </Execution>
+    </EndPointSpecification>
+    <ConsumesArtifacts>true</ConsumesArtifacts>
+    <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Deploy Composite</Name>
+      <Description>Deploys an SCA composite application to a SOA Suite domain.</Description>
+      <Target>plugin.confignow.operations.deployComposite</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Deploy Composite with CP</Name>
+      <Description>Deploys an SCA composite application to a SOA Suite domain, using the specified configuration plan.</Description>
+      <Target>plugin.confignow.operations.deployCompositeCp</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Deploy OSB config</Name>
+      <Description>Deploys a JAR file containing OSB configuration to a running domain</Description>
+      <Target>plugin.confignow.operations.deployOsbConfig</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>oPatch Apply</Name>
+      <Description>opatch_apply,opatch_lsinventory , opatch_rollback command applies oracle patches to offline domain. It’s based on Oracle’s opatch utility.</Description>
+      <Target>plugin.confignow.operations.opatchApply</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>oPatch lsInventory</Name>
+      <Description>opatch_apply,opatch_lsinventory , opatch_rollback command applies oracle patches to offline domain. It’s based on Oracle’s opatch utility.</Description>
+      <Target>plugin.confignow.operations.opatchLsInventory</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>oPatch rollback</Name>
+      <Description>opatch_apply,opatch_lsinventory , opatch_rollback command applies oracle patches to offline domain. It’s based on Oracle’s opatch utility.</Description>
+      <Target>plugin.confignow.operations.opatchRollback</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Password Encrypter</Name>
+      <Description>encrypts all password properties (any property ending in .password) in the properties files identified by command parameters, and writes the encrypted password values back to the properties file.</Description>
+      <Target>plugin.confignow.operations.passwordEncrypter</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Set default composite</Name>
+      <Description>sets the default revision number for a particular composite.</Description>
+      <Target>plugin.confignow.operations.setDefaultComposite</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Setip OER reports</Name>
+      <Description>packages and deploys Oracle Enterprise Repository reports into a Business Intelligence Publisher domain.</Description>
+      <Target>plugin.confignow.operations.setupOerReports</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Shutdown All Servers</Name>
+      <Description>stops all running servers in a domain, via contacting the admin server. This command will not perform correctly if the administration server for a domain is currently down.</Description>
+      <Target>plugin.confignow.operations.shutdownAllServers</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Start Composite</Name>
+      <Description>starts a previously stopped composite, allowing it to resume processing.</Description>
+      <Target>plugin.confignow.operations.startComposite</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Start WLS Admin</Name>
+      <Description>admin starts the administration server for a WebLogic Server domain, using the domain’s startWebLogic.sh or startWebLogic.cmd start script. Output from the server starting is displayed to screen, but the terminal used to run the command can be safely closed without interrupting the administration server.</Description>
+      <Target>plugin.confignow.operations.startWlsAdmin</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>SStop Composite</Name>
+      <Description>Stops a running composite.</Description>
+      <Target>plugin.confignow.operations.stopComposite</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Stop WLS Admin</Name>
+      <Description>stops the administration server for a domain if it is running currently.</Description>
+      <Target>plugin.confignow.operations.stopWlsAdmin</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Undeploy Composite</Name>
+      <Description>undeploys an SCA composite from a SOA Suite domain.</Description>
+      <Target>plugin.confignow.operations.undeployComposite</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
   </Operations>
 </PluginDefinition>
