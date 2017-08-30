@@ -779,5 +779,731 @@
       <ConsumesArtifacts>true</ConsumesArtifacts>
       <ProducesArtifacts>false</ProducesArtifacts>
     </Operation>
+    <Operation>
+      <Name>Add JBoss User</Name>
+      <Description>creates a management user in the nominated JBoss home.</Description>
+      <Target>plugin.confignow.operations.addUser</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Start JBoss</Name>
+      <Description>starts the given JBoss standalone server.</Description>
+      <Target>plugin.confignow.operations.startJboss</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Stop JBoss</Name>
+      <Description>stops the given JBoss standalone server.</Description>
+      <Target>plugin.confignow.operations.stopJboss</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Deploy JBoss App</Name>
+      <Description>deploys an application to local JBoss instance</Description>
+      <Target>plugin.confignow.operations.deployJboss</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Undeploy JBoss App</Name>
+      <Description>undeploys an application from local JBoss instance</Description>
+      <Target>plugin.confignow.operations.undeployJboss</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Remote Deploy App</Name>
+      <Description>deploys an application to remote jboss instance via jboss-cli</Description>
+      <Target>plugin.confignow.operations.remoteDeployApp</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Remote Undeploy App</Name>
+      <Description>undeploys an application from remote jboss instance via jboss-cli</Description>
+      <Target>plugin.confignow.operations.remoteUndeployApp</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Run cli</Name>
+      <Description>executes a cli script against a remote jboss instance via jboss-cli –f option</Description>
+      <Target>plugin.confignow.operations.runCli</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Configure Datasource</Name>
+      <Description>configures a datasource and associated drivers in a remote jboss instance via jboss-cli</Description>
+      <Target>plugin.confignow.operations.configureDatasource</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Stop Fuse</Name>
+      <Description>stops the Jboss Fuse server.</Description>
+      <Target>plugin.confignow.operations.stopFuse</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Start Karaf Session</Name>
+      <Description>starts a Karaf session for the given Jboss Fuse server.</Description>
+      <Target>plugin.confignow.operations.startKarafSession</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Deploy Fuse App</Name>
+      <Description>deploys the given application to the nominated Jboss Fuse server.</Description>
+      <Target>plugin.confignow.operations.deployFuseApp</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Undeploy Fuse App</Name>
+      <Description>undeploys the given application from the nominated Jboss Fuse server.</Description>
+      <Target>plugin.confignow.operations.undeployFuseApp</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Start Fuse</Name>
+      <Description>starts the Jboss Fuse server.</Description>
+      <Target>plugin.confignow.operations.startFuse</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Start AMQ</Name>
+      <Description>starts a given Active MQ instance.</Description>
+      <Target>plugin.confignow.operations.startAmq</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Stop AMQ</Name>
+      <Description>stops a given Active MQ instance.</Description>
+      <Target>plugin.confignow.operations.stopAmq</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Start Tomcat</Name>
+      <Description>starts the given Tomcat server.</Description>
+      <Target>plugin.confignow.operations.startTomcat</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Stop Tomcat</Name>
+      <Description>stops the given Tomcat server.</Description>
+      <Target>plugin.confignow.operations.stopTomcat</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Add Tomcat User</Name>
+      <Description>adds a management user to the given Tomcat server.</Description>
+      <Target>plugin.confignow.operations.addTomcatUser</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+    <Name>Deploy Tomcat App</Name>
+    <Description>deploys the given application to the Tomcat server.</Description>
+    <Target>plugin.confignow.operations.deployTomcat</Target>
+    <PropertyKeys/>
+    <Inputs>
+      <AllowsUserDefined>false</AllowsUserDefined>
+      <Input>
+        <Name>FDCN_CONFIG_FILE</Name>
+        <DataType>String</DataType>
+        <Description>Properties file to used by configNOW</Description>
+        <DisplayName>Properties file name</DisplayName>
+        <IsDefaultValueExpression>false</IsDefaultValueExpression>
+        <IsRequired>true</IsRequired>
+        <IsEncrypted>false</IsEncrypted>
+        <DisplayRows>1</DisplayRows>
+        <DisplayColumns>120</DisplayColumns>
+      </Input>
+    </Inputs>
+    <Outputs>
+      <AllowsUserDefined>false</AllowsUserDefined>
+    </Outputs>
+    <EndPointSpecification>
+      <Selection>
+        <All/>
+      </Selection>
+      <Execution>
+        <Any/>
+      </Execution>
+    </EndPointSpecification>
+    <ConsumesArtifacts>true</ConsumesArtifacts>
+    <ProducesArtifacts>false</ProducesArtifacts>
+  </Operation>
+    <Operation>
+      <Name>Undeploy Tomcat App</Name>
+      <Description>undeploys the given application from the Tomcat server.</Description>
+      <Target>plugin.confignow.operations.undeployTomcat</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Reload Tomcat App</Name>
+      <Description>redeploys the given application in the Tomcat server.</Description>
+      <Target>plugin.confignow.operations.reloadTomcat</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
   </Operations>
 </PluginDefinition>
