@@ -21,7 +21,8 @@ public class BuildCommand
     private String mConfigNowHome;
 
     public BuildCommand(WorkflowExecutionContext workflowExecutionContext) {
-        mConfigNowHome = workflowExecutionContext.getInstallPluginsDirectory() + File.separator + "configNOW";
+        String version = configNowProperties.Plugin_Version;
+        mConfigNowHome = workflowExecutionContext.getInstallPluginsDirectory("IntegralConfigNOWPlugin", version) + File.separator + "configNOW" + File.separator + "demo";
     }
 
     public void setBuildCommand(String[] commands){

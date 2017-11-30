@@ -7,7 +7,7 @@
   <SubTechnologyGroup>Script</SubTechnologyGroup>
   <Vendor>Integral Technology Solutions</Vendor>
   <MaxConcurrentThreads>-1</MaxConcurrentThreads>
-  <Version>2.0.1</Version>
+  <Version>2.0.8</Version>
   <Operations>
     <Operation>
       <Name>Activate Composite</Name>
