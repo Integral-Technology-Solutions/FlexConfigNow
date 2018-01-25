@@ -59,9 +59,6 @@ public class BuildCommand
         if (this.mBuildCommand == null){
             LOG.logSevere(method, "No build commands parsed");
             return false;
-        }else if (mBuildCommand.length != 4){
-            LOG.logSevere(method, "Incorrect amount of build arguments parsed");
-            return false;
         }else if (!mBuildCommand[0].equals("ConfigNOW")){
             LOG.logSevere(method, "First build argument needs to be 'confignow'");
             return false;

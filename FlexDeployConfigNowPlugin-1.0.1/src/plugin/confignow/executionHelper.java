@@ -21,4 +21,28 @@ public class executionHelper {
             throw new FlexExternalProcessFailedException(0, Arrays.asList(buildCommand.getBuildCommand()));
         }
     }
+
+    public static void executeCommand(WorkflowExecutionContext context, String command, String environment, String configFile, String installLoc){
+        String[] commandLine = {"ConfigNOW", command, environment, configFile, installLoc};
+
+        BuildCommand buildCommand = new BuildCommand(context);
+        buildCommand.setBuildCommand(commandLine);
+        boolean result = buildCommand.runBuildCommand();
+
+        if(!result){
+            throw new FlexExternalProcessFailedException(0, Arrays.asList(buildCommand.getBuildCommand()));
+        }
+    }
+
+    public static void executeCommand(WorkflowExecutionContext context, String command, String environment, String configFile, String installLoc, String home){
+        String[] commandLine = {"ConfigNOW", command, environment, configFile, installLoc, home};
+
+        BuildCommand buildCommand = new BuildCommand(context);
+        buildCommand.setBuildCommand(commandLine);
+        boolean result = buildCommand.runBuildCommand();
+
+        if(!result){
+            throw new FlexExternalProcessFailedException(0, Arrays.asList(buildCommand.getBuildCommand()));
+        }
+    }
 }
