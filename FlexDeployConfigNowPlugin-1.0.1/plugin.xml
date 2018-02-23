@@ -7,7 +7,7 @@
   <SubTechnologyGroup>Script</SubTechnologyGroup>
   <Vendor>Integral Technology Solutions</Vendor>
   <MaxConcurrentThreads>-1</MaxConcurrentThreads>
-  <Version>2.0.11</Version>
+  <Version>2.0.13</Version>
   <Operations>
     <Operation>
       <Name>Activate Composite</Name>
@@ -274,6 +274,61 @@
       <ProducesArtifacts>false</ProducesArtifacts>
     </Operation>
     <Operation>
+      <Name>Install SOA Suite</Name>
+      <Description>Creates a new SOA Suite installation non-interactively</Description>
+      <Target>plugin.confignow.operations.installSoaSuite</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+        <Input>
+          <Name>INSTALL_LOCATION</Name>
+          <DataType>String</DataType>
+          <Description>Location of the primary SOA Suite install file.</Description>
+          <DisplayName>Installation File 1</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+        <Input>
+          <Name>ENV_HOME</Name>
+          <DataType>String</DataType>
+          <Description>Location of the second part of the SOA suite install file.</Description>
+          <DisplayName>Installation File 2</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
       <Name>Install OSB 10g</Name>
       <Description>Creates a new OSB10g installation non-interactively</Description>
       <Target>plugin.confignow.operations.installOsb10g</Target>
@@ -318,7 +373,7 @@
       <ProducesArtifacts>false</ProducesArtifacts>
     </Operation>
     <Operation>
-      <Name>Intall Weblogic</Name>
+      <Name>Install Weblogic</Name>
       <Description>Creates a new WebLogic server installation non-interactively</Description>
       <Target>plugin.confignow.operations.installWeblogic</Target>
       <PropertyKeys/>
