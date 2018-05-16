@@ -24,8 +24,9 @@ public class artifactExtractor {
         String configNowHome = context.getInstallPluginsDirectory("IntegralConfigNOWPlugin", version) + File.separator + "configNOW";
         // Unzip artifacts dir into the configNowHome dir
         String response = unzip(artifactsLoc, configNowHome);
+        String projectName = context.getProject().getName();
         // Set permissions on executable methods
-        setPermissions(configNowHome);
+        setPermissions(configNowHome, projectName);
         LOG.logInfoExiting(method, response);
     }
 
@@ -67,8 +68,8 @@ public class artifactExtractor {
         bufferedOutputStream.close();
     }
 
-    private void setPermissions(String configNowHome){
-        File shellCmd = new File(configNowHome + File.separator + "demo" + File.separator + "ConfigNOW.sh");
+    private void setPermissions(String configNowHome, String projectName){
+        File shellCmd = new File(configNowHome + File.separator + projectName + File.separator + "ConfigNOW.sh");
         shellCmd.setExecutable(true, false);
         shellCmd.setReadable(true, false);
         shellCmd.setWritable(true, false);

@@ -25,9 +25,10 @@ public class validationHelper{
         String version = configNowProperties.Plugin_Version;
         String configNowHome = workflowExecutionContext.getInstallPluginsDirectory("IntegralConfigNOWPlugin", version) + File.separator + "configNOW";
         String environment = workflowExecutionContext.getEnvironment().getCode();
+        String projectName = workflowExecutionContext.getProject().getName();
 
         /* Validation of environment provided */
-        String pathName = configNowHome + File.separator + "demo" + File.separator + "config" + File.separator + "environments" + File.separator + environment;
+        String pathName = configNowHome + File.separator + projectName + File.separator + "config" + File.separator + "environments" + File.separator + environment;
         File environmentDir = new File(pathName);
         if(environment == null){
             throw new FlexMissingArgumentException("No environment directory provided");
