@@ -7,7 +7,7 @@
   <SubTechnologyGroup>Script</SubTechnologyGroup>
   <Vendor>Integral Technology Solutions</Vendor>
   <MaxConcurrentThreads>-1</MaxConcurrentThreads>
-  <Version>2.0.14</Version>
+  <Version>2.0.15</Version>
   <Operations>
     <Operation>
       <Name>Activate Composite</Name>
@@ -233,6 +233,50 @@
       <Name>Install OSB</Name>
       <Description>Creates a new OSB (11g or higher) installation non-interactively</Description>
       <Target>plugin.confignow.operations.installOsb</Target>
+      <PropertyKeys/>
+      <Inputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+        <Input>
+          <Name>FDCN_CONFIG_FILE</Name>
+          <DataType>String</DataType>
+          <Description>Properties file to used by configNOW</Description>
+          <DisplayName>Properties file name</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+        <Input>
+          <Name>INSTALL_LOCATION</Name>
+          <DataType>String</DataType>
+          <Description>The location of the OSB install file</Description>
+          <DisplayName>Installation File</DisplayName>
+          <IsDefaultValueExpression>false</IsDefaultValueExpression>
+          <IsRequired>true</IsRequired>
+          <IsEncrypted>false</IsEncrypted>
+          <DisplayRows>1</DisplayRows>
+          <DisplayColumns>120</DisplayColumns>
+        </Input>
+      </Inputs>
+      <Outputs>
+        <AllowsUserDefined>false</AllowsUserDefined>
+      </Outputs>
+      <EndPointSpecification>
+        <Selection>
+          <All/>
+        </Selection>
+        <Execution>
+          <Any/>
+        </Execution>
+      </EndPointSpecification>
+      <ConsumesArtifacts>true</ConsumesArtifacts>
+      <ProducesArtifacts>false</ProducesArtifacts>
+    </Operation>
+    <Operation>
+      <Name>Install OSB12c</Name>
+      <Description>Creates a new OSB12c installation non-interactively</Description>
+      <Target>plugin.confignow.operations.InstallOsb12c</Target>
       <PropertyKeys/>
       <Inputs>
         <AllowsUserDefined>false</AllowsUserDefined>

@@ -16,77 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="installOsb.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installOsb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="65" column="5" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="65" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InstallOsb12c.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/InstallOsb12c.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="installOsb10g.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installOsb10g.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="configNowProperties.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugin/confignow/configNowProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InstallOsb12cTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/InstallOsb12cTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="installOsbTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/installOsbTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="19" selection-start-line="19" selection-end-line="32" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -116,9 +46,14 @@
       <find>demo</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/startCompositeTest.java" />
+        <option value="$PROJECT_DIR$/src/plugin/confignow/test/startFuseTest.java" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/test/startKarafSession.java" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/operations/startKarafSession.java" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/test/startKarafSessionTest.java" />
@@ -166,10 +101,8 @@
         <option value="$PROJECT_DIR$/src/plugin/confignow/validationHelper.java" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/artifactExtractor.java" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/test/installSoaSuiteTest.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/operations/InstallOsb12c.java" />
         <option value="$PROJECT_DIR$/plugin.xml" />
         <option value="$PROJECT_DIR$/src/plugin/confignow/configNowProperties.java" />
-        <option value="$PROJECT_DIR$/src/plugin/confignow/test/InstallOsb12cTest.java" />
       </list>
     </option>
   </component>
@@ -189,42 +122,41 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="PluginSource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PluginSource" type="462c0819:PsiDirectoryNode" />
+              <item name="FlexDeployConfigNowPlugin-1.0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlexDeployConfigNowPlugin-1.0.1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PluginSource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PluginSource" type="462c0819:PsiDirectoryNode" />
+              <item name="FlexDeployConfigNowPlugin-1.0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlexDeployConfigNowPlugin-1.0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="properties" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlexDeployConfigNowPlugin-1.0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlexDeployConfigNowPlugin-1.0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PluginSource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PluginSource" type="462c0819:PsiDirectoryNode" />
+              <item name="FlexDeployConfigNowPlugin-1.0.1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlexDeployConfigNowPlugin-1.0.1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="confignow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PluginSource" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PluginSource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="confignow" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -233,7 +165,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PluginSource" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -259,58 +191,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InstallOsb12cTest.testInstallOsb12c">
+  <component name="RunManager" selected="JUnit.installSoaSuiteTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="InstallOsb12cTest.testInstallOsb" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FDCN_Plugin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="plugin.confignow.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
-      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.InstallOsb12cTest" />
-      <option name="METHOD_NAME" value="testInstallOsb" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="InstallOsb12cTest.testInstallOsb12c" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FDCN_Plugin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="plugin.confignow.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
-      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.InstallOsb12cTest" />
-      <option name="METHOD_NAME" value="testInstallOsb12c" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit">
       <module name="FDCN_Plugin" />
@@ -345,6 +231,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="installOsbTest.testInstallObpm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FDCN_Plugin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="plugin.confignow.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
+      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.installOsbTest" />
+      <option name="METHOD_NAME" value="testInstallObpm" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="installSoaSuiteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FDCN_Plugin" />
       <extension name="coverage">
@@ -359,6 +268,29 @@
       <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.installSoaSuiteTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="installSoaSuiteTest.testInstallSoaSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FDCN_Plugin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="plugin.confignow.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="plugin.confignow.test" />
+      <option name="MAIN_CLASS_NAME" value="plugin.confignow.test.installSoaSuiteTest" />
+      <option name="METHOD_NAME" value="testInstallSoaSuite" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-Dflexagon.fd.install.root=C:\Users\Matt\Documents\Integral\flexdeploy\mock_install -Dflexagon.fd.repository.root=&lt;C:\Users\Matt\Documents\Integral\flexdeploy\mock_artifacts&gt;" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
@@ -655,19 +587,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="JUnit.installOsbTest.testInstallObpm" />
+      <item itemvalue="JUnit.installSoaSuiteTest.testInstallSoaSuite" />
       <item itemvalue="JUnit.installWeblogicTest.testInstallWeblogic" />
       <item itemvalue="JUnit.runRcuTest.testRunRcu" />
       <item itemvalue="JUnit.installSoaSuiteTest" />
-      <item itemvalue="JUnit.InstallOsb12cTest.testInstallOsb" />
-      <item itemvalue="JUnit.InstallOsb12cTest.testInstallOsb12c" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InstallOsb12cTest.testInstallOsb12c" />
-        <item itemvalue="JUnit.InstallOsb12cTest.testInstallOsb" />
         <item itemvalue="JUnit.installSoaSuiteTest" />
         <item itemvalue="JUnit.runRcuTest.testRunRcu" />
         <item itemvalue="JUnit.installWeblogicTest.testInstallWeblogic" />
+        <item itemvalue="JUnit.installSoaSuiteTest.testInstallSoaSuite" />
+        <item itemvalue="JUnit.installOsbTest.testInstallObpm" />
       </list>
     </recent_temporary>
   </component>
@@ -723,6 +655,15 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="installOsbTest_testInstallObpm - 2018.01.25 at 09h 00m 20s.xml">
+      <configuration name="installOsbTest.testInstallObpm" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="installSoaSuiteTest - 2018.02.21 at 16h 56m 11s.xml">
+      <configuration name="installSoaSuiteTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="installSoaSuiteTest - 2018.02.21 at 16h 59m 01s.xml">
+      <configuration name="installSoaSuiteTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="installSoaSuiteTest_testInstallSoaSuite - 2018.01.25 at 09h 06m 48s.xml">
       <configuration name="installSoaSuiteTest.testInstallSoaSuite" configurationId="JUnit" />
     </history-entry>
@@ -744,49 +685,39 @@
     <history-entry file="installSoaSuiteTest - 2018.05.17 at 09h 36m 38s.xml">
       <configuration name="installSoaSuiteTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InstallOsb12cTest_testInstallOsb - 2018.05.30 at 09h 59m 49s.xml">
-      <configuration name="InstallOsb12cTest.testInstallOsb" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstallOsb12cTest_testInstallOsb - 2018.05.30 at 10h 00m 30s.xml">
-      <configuration name="InstallOsb12cTest.testInstallOsb" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InstallOsb12cTest_testInstallOsb12c - 2018.05.30 at 10h 00m 52s.xml">
-      <configuration name="InstallOsb12cTest.testInstallOsb12c" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="168144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32980973" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37064415" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37064415" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24635416" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24635416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36293164" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="right" id="Properties" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info id="Nl-Palette" order="2" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32980973" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Properties" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32992035" />
@@ -813,354 +744,57 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/undeployJboss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/undeployTomcat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/adflibFlexDeployCore.jar!/flexagon/fd/core/plugin/AbstractPluginProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/addUserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="107" selection-start-line="10" selection-start-column="107" selection-end-line="10" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/createDomain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployOsbConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/createDomainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/undeployComposite.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/undeployFuseApp.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/undeployJboss.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/undeployTomcat.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/adflibFlexDeployCore.jar!/flexagon/fd/core/plugin/AbstractPluginProvider.class" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/addUserTest.java" />
+    <entry file="file://$PROJECT_DIR$/README.txt" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/createDomain.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/deployOsbConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/createDomainTest.java" />
     <entry file="file://$PROJECT_DIR$/src/plugin/confignow/installHelper.java" />
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/addUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="50" column="5" selection-start-line="15" selection-end-line="50" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/configureObpm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/configDiff.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/customCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/customCommandTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/installWeblogicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installWeblogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/listComposites.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/validateConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/runCliTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/runRcuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/runRcu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="35" column="40" lean-forward="true" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/showConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/showConfigLineage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installJBoss.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/listDeployedApps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="27" column="56" lean-forward="true" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installFuse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/statusFuse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installActiveMq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installTomcat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/startFuse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/addUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/configureObpm.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/configDiff.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/executionHelper.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/customCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/customCommandTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installOsb10g.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/installWeblogicTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installWeblogic.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/listComposites.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/validateConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/runCliTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/installOsbTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/runRcuTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/runRcu.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/showConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/showConfigLineage.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installJBoss.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/listDeployedApps.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installFuse.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/statusFuse.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installActiveMq.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installTomcat.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/startFuse.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.851/configNowProperties.class" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.585/configNowProperties.class" />
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/listDeployedAppsTomcat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installObpm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="75" column="5" selection-start-line="17" selection-end-line="75" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/installObpmTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" selection-start-line="19" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/adflibFlexDeployCore.jar!/flexagon/fd/core/Project.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/adflibFlexDeployCore.jar!/flexagon/fd/core/workflow/WorkflowExecutionContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installSoaSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/BuildCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="71" selection-start-line="22" selection-start-column="71" selection-end-line="22" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/validationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/artifactExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="71" column="77" selection-start-line="71" selection-start-column="77" selection-end-line="71" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/installSoaSuiteTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/properties/MASTER_PROPERTIES.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installOsb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="65" column="5" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="65" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installOsb10g.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/executionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="37" column="95" selection-start-line="37" selection-start-column="95" selection-end-line="37" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/InstallOsb12c.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/configNowProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/installOsbTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" selection-start-line="19" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/InstallOsb12cTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installOsb.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/listDeployedAppsTomcat.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installObpm.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/installObpmTest.java" />
+    <entry file="jar://$PROJECT_DIR$/lib/adflibFlexDeployCore.jar!/flexagon/fd/core/Project.class" />
+    <entry file="jar://$PROJECT_DIR$/lib/adflibFlexDeployCore.jar!/flexagon/fd/core/workflow/WorkflowExecutionContext.class" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/operations/installSoaSuite.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/BuildCommand.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/validationHelper.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/artifactExtractor.java" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/test/installSoaSuiteTest.java" />
+    <entry file="file://$PROJECT_DIR$/properties/MASTER_PROPERTIES.xml" />
+    <entry file="file://$PROJECT_DIR$/plugin.xml" />
+    <entry file="file://$PROJECT_DIR$/src/plugin/confignow/configNowProperties.java" />
   </component>
   <component name="masterDetails">
     <states>
